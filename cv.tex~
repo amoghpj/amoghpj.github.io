@@ -16,10 +16,9 @@
 \begin{document} 
 \thispagestyle{empty} % this page does not have a header
 \name{Amogh Prabhav Jalihal}
-\address{2160W, Torgersen Hall,\\
-Virginia Tech,\\
+\address{3200 Richmond Ln, Apt F\\
 Blacksburg, VA, 24060\\
-jamogh AT vt.edu}
+amogh.jalihal@gmail.com}
 
 
 \begin{resume}
@@ -45,7 +44,7 @@ Prize for the highest mark in Chemistry in 12th Board Examination.
 
 Among the top 1.5\% of students who appeared for 12th Board Exam from Kendriya Vidyalaya Sangathan.
 
-On the Dean's List for the first year (top 2\% for each year), and the second  and  fourth year (top 10\% for each year).
+On the Dean's List for the first year (top 2\% for each year) and the second year (top 10\% for each year).
 
 
 \section{Research Experience} 
@@ -62,9 +61,7 @@ On the Dean's List for the first year (top 2\% for each year), and the second  a
 {\bf 2015 Spring:} Carried out Bachelor's Thesis Project in Prof. Abby Dernburg's Lab in UC Berkeley. Project involved optimizing immunostaining protocol for IF in {\it P. pacificus} to visualize meiotic machinery, in a comparative evolution study involving double-strand break machinery. 
 
 {\bf 2015 Fall:} Carried out Ph.D rotation in Dr. Silke Hauf's lab in Virginia Tech. Project involved scripting to carry out semi-automated image analysis on {\it S. pombe} cells, to analyze temporal dynamics of various cell-cycle components including Plo1, Cdc13, Cdc2, Cdc20 etc. Also attempted to investigate apparent order in chromosome segregation in {\it S. pombe} by creating GFP-tagged strains, analyzed by live-cell fluorescence microscopy. 
-
-{\bf 2016 Spring:} Carried out rotation under Dr. John Tyson and Dr. T.M. Murali. Constructed network of nutrient signaling in {\it S. cerevisiae} in order to predict regualtion of ribosomal activity as a function of nutrient input. 
-%\end{itemize}
+ 	%\end{itemize}
 
 \section{International Conferences attended}
 \vspace{0.1in}
@@ -73,12 +70,15 @@ On the Dean's List for the first year (top 2\% for each year), and the second  a
 
 {\bf 2014:} {\it C. elegans} Asia-Pacific and Developmental Biology Conference held in Nara, Japan in July 2014.   
 
+\pagebreak
 \section{Research Interests}
 \vspace{0.1in}
 
-Modeling cell growth and division.
+Dynamics involved in Meiotic as well as Mitotic cell division.
 
-Stochastic Resonance in biological systems.
+Stochastic Resonance in biological systems, specifically in quorum sensing and neural activity.
+
+Modeling of large-scale behavior in mixed-species bacterial colonies with respect to interacting quorum-sensing circuits, at the population level.
 
 Non-linear dynamics in Biology.
 
@@ -86,7 +86,7 @@ Non-linear dynamics in Biology.
 \vspace{0.1in}
 {\textit {Operating Systems:}} Windows, Linux, MacOS
 
-{\textit {Scripting languages:}} Python
+{\textit {Programming languages:}} C, C++
 
 {\textit {Scientific software:}} Scilab, ImageJ
 
