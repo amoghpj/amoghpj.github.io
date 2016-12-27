@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Some hints at setting up various utilities for emacs and otherwise</title>
+<!-- 2016-12-26 Mon 19:11 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Amogh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="./css/github-light.css"/>
+<script src="./js/scale.fix.js"></script>
+
+<script type="text/javascript" src="http://orgmode.org/org-info.js">
+/**
+ *
+ * @source: http://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2013 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Some hints at setting up various utilities for emacs and otherwise</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. General Instructions for this document:</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Formatting:</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Emacs hints:</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Graphviz resources:</a></li>
+<li><a href="#sec-2-2">2.2. Ditaa</a></li>
+<li><a href="#sec-2-3">2.3. SpellCheck modes</a></li>
+<li><a href="#sec-2-4">2.4. Org mode tutorials and help</a></li>
+<li><a href="#sec-2-5">2.5. Org Mode LaTeX</a>
+<ul>
+<li><a href="#sec-2-5-1">2.5.1. Org-ref</a></li>
+<li><a href="#sec-2-5-2">2.5.2. CdLaTeX</a></li>
+<li><a href="#sec-2-5-3">2.5.3. Latex export</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-6">2.6. Org-Beamer</a></li>
+<li><a href="#sec-2-7">2.7. Plotting in org-mode</a></li>
+<li><a href="#sec-2-8">2.8. Regexp in Emacs</a></li>
+<li><a href="#sec-2-9">2.9. Basics:</a>
+<ul>
+<li><a href="#sec-2-9-1">2.9.1. Switching Buffers:</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-10">2.10. Miscellaneous</a>
+<ul>
+<li><a href="#sec-2-10-1">2.10.1. Structure of init.el file</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-11">2.11. Customizing themes:</a>
+<ul>
+<li><a href="#sec-2-11-1">2.11.1. Specifics:</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-12">2.12. Wishlist</a>
+<ul>
+<li><a href="#sec-2-12-1">2.12.1. <span class="done DONE">DONE</span> Org-ref</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-13">2.13. Org gifs</a></li>
+<li><a href="#sec-2-14">2.14. Org-capture and org-refile</a>
+<ul>
+<li><a href="#sec-2-14-1">2.14.1. Setting up Org-protocol</a></li>
+<li><a href="#sec-2-14-2">2.14.2. Setting up Firefox org-capture</a></li>
+<li><a href="#sec-2-14-3">2.14.3. Helpful links</a></li>
+<li><a href="#sec-2-14-4">2.14.4. Known issues on my system</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-3">3. LaTeX</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Notes in Beamer:</a></li>
+<li><a href="#sec-3-2">3.2. Beamer Themes:</a></li>
+<li><a href="#sec-3-3">3.3. Miscellaneous:</a>
+<ul>
+<li><a href="#sec-3-3-1">3.3.1. To specify absolute file paths:</a></li>
+<li><a href="#sec-3-3-2">3.3.2. Fancy Quotes Environment:</a></li>
+<li><a href="#sec-3-3-3">3.3.3. Comments in 'draft' mode:</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-4">3.4. Graphics:</a></li>
+<li><a href="#sec-3-5">3.5. Bibtex:</a>
+<ul>
+<li><a href="#sec-3-5-1">3.5.1. Hiding bibliography at the end while adding citations in the document</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-6">3.6. Wishlist</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Linux</a>
+<ul>
+<li><a href="#sec-4-1">4.1. Ergonomics</a>
+<ul>
+<li><a href="#sec-4-1-1">4.1.1. dmenu</a></li>
+<li><a href="#sec-4-1-2">4.1.2. tree</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-5">5. PyDSTool</a>
+<ul>
+<li><a href="#sec-5-1">5.1. Getting Started</a>
+<ul>
+<li><a href="#sec-5-1-1">5.1.1. Basic 3-component negative feedback loop (of sorts)</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-2">5.2. Bifurcations and more</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6. Python</a>
+<ul>
+<li><a href="#sec-6-1">6.1. Comet implementation in Python</a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7. Github</a>
+<ul>
+<li><a href="#sec-7-1">7.1. Blogging With Jekyll</a></li>
+</ul>
+</li>
+<li><a href="#sec-8">8. Misc</a>
+<ul>
+<li><a href="#sec-8-1">8.1. Hemingway</a></li>
+<li><a href="#sec-8-2">8.2. Indic Language support</a></li>
+</ul>
+</li>
+<li><a href="#sec-9">9. Test</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> General Instructions for this document:</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Formatting:</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Since this document will be continuously updated, I should follow some rules to keep these notes sensible after any length of time
+</p>
+<ul class="org-ul">
+<li>The <b>Heading</b> of each entry should be brief
+</li>
+<li>Include a brief <b>Description</b> of what the entry does
+</li>
+<li>Use the <code>#+BEGIN_EXAMPLE</code> environment to include code snippets.
+</li>
+<li>Use Time stamps at the beginning/end of each entry with C-c . to ensure each entry has a date associated with it. (Older entries do not have a time-stamp)
+</li>
+</ul>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-03 Wed&gt;</span></span>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Emacs hints:</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Graphviz resources:</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>.emacs has been setup
+</li>
+<li><a href="http://www.tonyballantyne.com/graphs.html#sec-4-1">http://www.tonyballantyne.com/graphs.html#sec-4-1</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Ditaa</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-11-28 Mon&gt;</span></span>
+I finally setup ditaa.
+Simply install ditaa using apt install.
+Add make sure the path is set using (setq org-ditaa-jar-path "<i>usr/bin/ditaa") /Note: I used whereis to find the path to ditaa</i>
+Make sure org-babel knows that you are using ditaa.
+The drawing is done manually, which makes ditaa a little less attractive to use to make large flow charts. But there is html support, soo it could potentially be useful in makeing simple illustrations.
+</p>
+
+<div class="figure">
+<p><img src="hello-world.png" alt="hello-world.png" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> SpellCheck modes</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>M-x ispell enters into a temporary spell-check mode and suggests correct spellings.
+<ul class="org-ul">
+<li>Use <i>a</i> to word to dictionary
+</li>
+<li>Works well in latex files as well
+</li>
+</ul>
+</li>
+<li>Flyspell mode is useful in text documents as it highlights incorrect spellings.
+<ul class="org-ul">
+<li>Not useful in .tex files as it doesn't play well with Auto-Complete mode
+</li>
+</ul>
+</li>
+</ul>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-03 Wed&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Org mode tutorials and help</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+<a href="http://doc.norang.ca/org-mode.html">http://doc.norang.ca/org-mode.html</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Org Mode LaTeX</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-18 Thu&gt;</span></span>
+</p>
+</div>
+<div id="outline-container-sec-2-5-1" class="outline-4">
+<h4 id="sec-2-5-1"><span class="section-number-4">2.5.1</span> Org-ref</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<ul class="org-ul">
+<li>Available for Emacs24.5 and higher
+</li>
+<li>Still need to juggle around a litle to get it to work
+</li>
+<li>Add bibliographystyle:&lt;&gt; at the end of the file to ensure that the bibliography is created
+</li>
+</ul>
+<p>
+<b>Known Bugs</b>
+</p>
+<ul class="org-ul">
+<li>Does not import bib info from all pdfs or dois
+</li>
+<li>dois work on crossref website but are inaccurate inside the crossref-lookup function
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5-2" class="outline-4">
+<h4 id="sec-2-5-2"><span class="section-number-4">2.5.2</span> CdLaTeX</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<ul class="org-ul">
+<li>Built to play well with latex mode in Org.
+</li>
+<li>Has shortucts for environment definition and various math definitions that work with TAB completion
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-5-3" class="outline-4">
+<h4 id="sec-2-5-3"><span class="section-number-4">2.5.3</span> Latex export</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<p>
+Added the following to .emacs, which executes those commands in that order for every latex export from Org:
+</p>
+
+<pre class="example">
+(setq org-latex-pdf-process (quote ("pdflatex %f" "bibtex %b" "bibtex %b" "pdflatex %f" "pdflatex %f")))
+</pre>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-10-06 Thu&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li>Modified export to include syntax highlighting:
+</li>
+</ul>
+<pre class="example">
+(setq org-latex-pdf-process
+ (quote ("pdflatex -shell-escape -interaction nonstopmode %f" "bibtex %b" "bibtex %b" "pdflatex -shell-escape -interaction nonstopmode %f" "pdflatex -shell-escape -interaction nonstopmode %f")))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Org-Beamer</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-16 Fri&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li>Require ox-latex
+</li>
+<li>It changes the export settings to include beamer specific settings.
+</li>
+<li>After opening a new (empty) document, use C-c C-e # and type beamer to get a default template for beamer.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-7" class="outline-3">
+<h3 id="sec-2-7"><span class="section-number-3">2.7</span> Plotting in org-mode</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-14 Wed&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li>Just an experiment to plot data from an org-table!
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Sede</th>
+<th scope="col" class="right">Max cites</th>
+<th scope="col" class="right">H-index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Chile</td>
+<td class="right">257.72</td>
+<td class="right">21.39</td>
+</tr>
+
+<tr>
+<td class="left">Leeds</td>
+<td class="right">165.77</td>
+<td class="right">19.68</td>
+</tr>
+
+<tr>
+<td class="left">Sao Paolo</td>
+<td class="right">71.00</td>
+<td class="right">11.50</td>
+</tr>
+
+<tr>
+<td class="left">Stockholm</td>
+<td class="right">134.19</td>
+<td class="right">14.33</td>
+</tr>
+
+<tr>
+<td class="left">Morelia</td>
+<td class="right">257.56</td>
+<td class="right">17.67</td>
+</tr>
+</tbody>
+</table>
+<p>
+<b>INCOMPLETE ENTRY</b>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-8" class="outline-3">
+<h3 id="sec-2-8"><span class="section-number-3">2.8</span> Regexp in Emacs</h3>
+<div class="outline-text-3" id="text-2-8">
+<ul class="org-ul">
+<li>To find and replace text: M-x replace-string
+</li>
+<li>To find and replace regexp: M-x replace-regexp
+</li>
+<li>Newline character is: C-q C-j [C-q puts a quote, C-j is representation of newline]
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-9" class="outline-3">
+<h3 id="sec-2-9"><span class="section-number-3">2.9</span> Basics:</h3>
+<div class="outline-text-3" id="text-2-9">
+</div><div id="outline-container-sec-2-9-1" class="outline-4">
+<h4 id="sec-2-9-1"><span class="section-number-4">2.9.1</span> Switching Buffers:</h4>
+<div class="outline-text-4" id="text-2-9-1">
+<ul class="org-ul">
+<li>C-x left/right
+</li>
+<li>C-x b to list all buffers
+</li>
+</ul>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-03 Wed&gt;</span></span>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-10" class="outline-3">
+<h3 id="sec-2-10"><span class="section-number-3">2.10</span> Miscellaneous</h3>
+<div class="outline-text-3" id="text-2-10">
+</div><div id="outline-container-sec-2-10-1" class="outline-4">
+<h4 id="sec-2-10-1"><span class="section-number-4">2.10.1</span> Structure of init.el file</h4>
+<div class="outline-text-4" id="text-2-10-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-18 Thu&gt;</span></span>
+ALWAYS put the following at the top of the init.el file. 
+</p>
+
+<pre class="example">
+;; (when (&gt;= emacs-major-version 24)
+;; 	(require `package)
+;; 	(add-to-list 
+;; 	`package-archives 
+;; 	`("melpa" . "https://melpa.org/packages/")
+;; 	t)
+;; 	(package-initialize))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-11" class="outline-3">
+<h3 id="sec-2-11"><span class="section-number-3">2.11</span> Customizing themes:</h3>
+<div class="outline-text-3" id="text-2-11">
+<p>
+Beyond loading predefined themes, to modify themes(including fonts, background and foreground colors etc.) further:
+</p>
+<ol class="org-ol">
+<li>M-x cutomize-face
+</li>
+<li>default
+</li>
+<li>Change the values in the list of options presented.
+</li>
+<li>Apply and Save will save the settings in the .emacs
+</li>
+</ol>
+</div>
+<div id="outline-container-sec-2-11-1" class="outline-4">
+<h4 id="sec-2-11-1"><span class="section-number-4">2.11.1</span> Specifics:</h4>
+<div class="outline-text-4" id="text-2-11-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-16 Fri&gt;</span></span>
+</p>
+</div>
+<ol class="org-ol"><li><a id="sec-2-11-1-1" name="sec-2-11-1-1"></a>Background: set-background-color<br  /></li>
+<li><a id="sec-2-11-1-2" name="sec-2-11-1-2"></a>Foreground: set-foreground-color<br  /></li>
+<li><a id="sec-2-11-1-3" name="sec-2-11-1-3"></a>M-x disable-theme will disable current theme, or specified theme.<br  /></li></ol>
+</div>
+</div>
+
+<div id="outline-container-sec-2-12" class="outline-3">
+<h3 id="sec-2-12"><span class="section-number-3">2.12</span> Wishlist</h3>
+<div class="outline-text-3" id="text-2-12">
+</div><div id="outline-container-sec-2-12-1" class="outline-4">
+<h4 id="sec-2-12-1"><span class="section-number-4">2.12.1</span> <span class="done DONE">DONE</span> Org-ref</h4>
+<div class="outline-text-4" id="text-2-12-1">
+<ul class="org-ul">
+<li>Currently not installed
+</li>
+<li>Requires Emacs 24.4
+</li>
+</ul>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-03 Wed&gt;</span></span>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-13" class="outline-3">
+<h3 id="sec-2-13"><span class="section-number-3">2.13</span> Org gifs</h3>
+<div class="outline-text-3" id="text-2-13">
+<p>
+<a href="file:///home/amogh/Downloads/giphy.gif">Cat gif</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-14" class="outline-3">
+<h3 id="sec-2-14"><span class="section-number-3">2.14</span> Org-capture and org-refile</h3>
+<div class="outline-text-3" id="text-2-14">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-26 Mon&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li>Setup org-capture, org-refile, and hooked firefox up with org-protocol
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-2-14-1" class="outline-4">
+<h4 id="sec-2-14-1"><span class="section-number-4">2.14.1</span> Setting up Org-protocol</h4>
+<div class="outline-text-4" id="text-2-14-1">
+<ul class="org-ul">
+<li>Added org-protocol-cpature-html to load path.
+</li>
+<li>Also requires org-protocol
+</li>
+<li>Add the following to init.el:
+</li>
+</ul>
+<pre class="example">
+;; Org-capture setup
+(define-key global-map "\C-cc" 'org-capture)
+(server-start)
+(require 'org-protocol) 
+(add-to-list 'load-path "~/.emacs.d/org-protocol-capture-html/")
+(require 'org-protocol-capture-html)
+; Targets include this file and any file contributing to the agenda - up to 5 levels deep
+(setq org-refile-targets '((nil :maxlevel . 5) (org-agenda-files :maxlevel . 5)))
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-2-14-2" class="outline-4">
+<h4 id="sec-2-14-2"><span class="section-number-4">2.14.2</span> Setting up Firefox org-capture</h4>
+<div class="outline-text-4" id="text-2-14-2">
+<ul class="org-ul">
+<li>Get the Firefox org-capture plugin <a href="http://chadok.info/firefox-org-capture/">here</a>
+</li>
+<li>To make Firefox aware of emacs, setup as follows:
+</li>
+<li>Add the following to ~/.local/share/applications/org-protocol.desktop:
+</li>
+</ul>
+<pre class="example">
+[Desktop Entry]
+Name=org-protocol
+Exec=emacsclient %u
+Type=Application
+Terminal=false
+Categories=System;
+MimeType=x-scheme-handler/org-protocol;
+</pre>
+<ul class="org-ul">
+<li>Add the following boolean variable to about:config in the browser: 
+</li>
+</ul>
+<p>
+network.protocol-handler.expose.org-protocol
+And set it to TRUE
+</p>
+<ul class="org-ul">
+<li>Add the following bookmarklet to firefox:
+</li>
+</ul>
+<pre class="example">
+javascript:location.href%20=%20'org-protocol://capture-html://w/'%20+%20encodeURIComponent(location.href)%20+%20'/'%20+%20encodeURIComponent(document.title%20||%20"[untitled%20page]")%20+%20'/'%20+%20encodeURIComponent(function%20()%20{var%20html%20=%20"";%20if%20(typeof%20document.getSelection%20!=%20"undefined")%20{var%20sel%20=%20document.getSelection();%20if%20(sel.rangeCount)%20{var%20container%20=%20document.createElement("div");%20for%20(var%20i%20=%200,%20len%20=%20sel.rangeCount;%20i%20&lt;%20len;%20++i)%20{container.appendChild(sel.getRangeAt(i).cloneContents());}%20html%20=%20container.innerHTML;}}%20else%20if%20(typeof%20document.selection%20!=%20"undefined")%20{if%20(document.selection.type%20==%20"Text")%20{html%20=%20document.selection.createRange().htmlText;}}%20var%20relToAbs%20=%20function%20(href)%20{var%20a%20=%20document.createElement("a");%20a.href%20=%20href;%20var%20abs%20=%20a.protocol%20+%20"//"%20+%20a.host%20+%20a.pathname%20+%20a.search%20+%20a.hash;%20a.remove();%20return%20abs;};%20var%20elementTypes%20=%20[['a',%20'href'],%20['img',%20'src']];%20var%20div%20=%20document.createElement('div');%20div.innerHTML%20=%20html;%20elementTypes.map(function(elementType)%20{var%20elements%20=%20div.getElementsByTagName(elementType[0]);%20for%20(var%20i%20=%200;%20i%20&lt;%20elements.length;%20i++)%20{elements[i].setAttribute(elementType[1],%20relToAbs(elements[i].getAttribute(elementType[1])));}});%20return%20div.innerHTML;}());
+</pre>
+<ul class="org-ul">
+<li>Finally run the following command in the terminal
+</li>
+</ul>
+<pre class="example">
+update-desktop-database ~/.local/share/applications/
+</pre>
+<p>
+NOTE: 
+I also tried setting it up using the command <code>kbuildsycoca4</code>. Pretty sure the first one did the trick though.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-14-3" class="outline-4">
+<h4 id="sec-2-14-3"><span class="section-number-4">2.14.3</span> Helpful links</h4>
+<div class="outline-text-4" id="text-2-14-3">
+<ul class="org-ul">
+<li><a href="http://tech.memoryimprintstudio.com/org-capture-from-external-applications/">Here</a> is a comprehensive guide to setting up org-capture from the browser.
+</li>
+<li><a href="http://stackoverflow.com/questions/7464951/how-to-make-org-protocol-work">This</a> answer on Stack Overflow helped in  setting up org-protocol
+</li>
+<li><a href="https://blog.sleeplessbeastie.eu/2016/04/22/how-to-use-org-capture-from-system-tray/">This</a> might be useful for setting up the system tray described in the post. <b>Haven't tried it yet</b>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-14-4" class="outline-4">
+<h4 id="sec-2-14-4"><span class="section-number-4">2.14.4</span> Known issues on my system</h4>
+<div class="outline-text-4" id="text-2-14-4">
+<ul class="org-ul">
+<li>An emacs instance needs to be open for org-capture to work from Firefox. Is this how emacsclient is supposed to work?
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> LaTeX</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Notes in Beamer:</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+<b>USE <i>present filename.pdf</i> in the commandline</b> 
+</p>
+<ul class="org-ul">
+<li>Install pdfpc using 
+sudo apt-get install pdf-presenter-console
+</li>
+<li>In order to have a presentation with notes, use the beamer class WITHOUT the notes option.
+</li>
+<li>Include the following headers:
+</li>
+</ul>
+
+<p>
+\usepackage{pdfpcnotes}
+\usepackage{pgfpages}
+</p>
+
+<ul class="org-ul">
+<li>Add notes in the \pnote environment.
+</li>
+<li>Run pdfpc in the commandline passing the file name as argument
+</li>
+<li>To make bullets for notes, run these. I have currently redefined the command <i>pdfpc</i> to run these already:
+sed -i 's/\\\\/\n/g' slides.pdfpc
+sed -i 's/\\par/\n\n/g' slides.pdfpc
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Beamer Themes:</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Currently using <a href="https://github.com/matze/mtheme">Metropolis</a> theme
+</li>
+</ul>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-03 Wed&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Miscellaneous:</h3>
+<div class="outline-text-3" id="text-3-3">
+</div><div id="outline-container-sec-3-3-1" class="outline-4">
+<h4 id="sec-3-3-1"><span class="section-number-4">3.3.1</span> To specify absolute file paths:</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ul class="org-ul">
+<li>Use \string~ instead of ~ to specify the home directory
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-3-2" class="outline-4">
+<h4 id="sec-3-3-2"><span class="section-number-4">3.3.2</span> Fancy Quotes Environment:</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ul class="org-ul">
+<li>To use a fancy quotes environment for quotations insert the following in the document:
+</li>
+</ul>
+
+<pre class="example">
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Fancy Quotes%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\makeatletter
+
+\tikzset{%
+  fancy quotes/.style={
+    text width=\fq@width pt,
+    align=justify,
+    inner sep=1em,
+    anchor=north west,
+    minimum width=\linewidth,
+  },
+  fancy quotes width/.initial={.8\linewidth},
+  fancy quotes marks/.style={
+    scale=8,
+    text=white,
+    inner sep=0pt,
+  },
+  fancy quotes opening/.style={
+    fancy quotes marks,
+  },
+  fancy quotes closing/.style={
+    fancy quotes marks,
+  },
+  fancy quotes background/.style={
+    show background rectangle,
+    inner frame xsep=0pt,
+    background rectangle/.style={
+      fill=gray!25,
+      rounded corners,
+    },
+  }
+}
+
+\newenvironment{fancyquotes}[1][]{%
+\noindent
+\tikzpicture[fancy quotes background]
+\node[fancy quotes opening,anchor=north west] (fq@ul) at (0,0) {``};
+\tikz@scan@one@point\pgfutil@firstofone(fq@ul.east)
+\pgfmathsetmacro{\fq@width}{\linewidth - 2*\pgf@x}
+\node[fancy quotes,#1] (fq@txt) at (fq@ul.north west) \bgroup}
+{\egroup;
+\node[overlay,fancy quotes closing,anchor=east] at (fq@txt.south east) {''};
+\endtikzpicture}
+
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-3-3-3" class="outline-4">
+<h4 id="sec-3-3-3"><span class="section-number-4">3.3.3</span> Comments in 'draft' mode:</h4>
+<div class="outline-text-4" id="text-3-3-3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-03 Wed&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li>To include comments in latex documents with a ``draft mode'' use this:
+</li>
+</ul>
+<pre class="example">
+%%%%%%%%%%%%%%%%%%%%%%%% Comment Color %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{ifthen}
+\newboolean{draft}
+% is this a draft?
+\setboolean{draft}{true}
+%\setboolean{draft}{false}
+\ifthenelse{\boolean{draft}}{%
+  %% Macros for editorial comments
+  \newcounter{comments}
+  \newcommand{\tmm}[1]{\addtocounter{comments}{1}{\color{Magenta}[TMM \thecomments: #1]}}
+  \newcommand{\jeff}[1]{\addtocounter{comments}{1}{\color{Blue}[Jeff \thecomments: #1]}}
+%  \newcommand{\alex}[1]{\addtocounter{comments}{1}{\color{Green}[Alex \thecomments: #1]}}
+  \newcommand{\amogh}[1]{\addtocounter{comments}{1}{\color{BurntOrange}[Amogh \thecomments: #1]}}	
+}{
+\newcommand{\tmm}[1]{}
+\newcommand{\amogh}[1]{}
+\newcommand{\jeff}[1]{}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Graphics:</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>Use the svg package, specifying \includesvg{filename-with-no-extension} instead of \input{filename.pdf_tex}
+</li>
+<li>Use the \relscale{scalefactor} instead of font sizes specifiers. Expecially useful in resizing svgs and text in documents.
+</li>
+<li>Learn more about TexTopo and Texshade
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Bibtex:</h3>
+<div class="outline-text-3" id="text-3-5">
+</div><div id="outline-container-sec-3-5-1" class="outline-4">
+<h4 id="sec-3-5-1"><span class="section-number-4">3.5.1</span> Hiding bibliography at the end while adding citations in the document</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-10-03 Mon&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li>This helps in the special case where you want to manually define your style or something as ridiculous.
+</li>
+</ul>
+<p>
+Use the package bibentry, and instead of \bibliography, use \nobibliography
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Wishlist</h3>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Linux</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Ergonomics</h3>
+<div class="outline-text-3" id="text-4-1">
+</div><div id="outline-container-sec-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><span class="section-number-4">4.1.1</span> dmenu</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-26 Mon&gt;</span></span>
+<a href="http://tools.suckless.org/dmenu/">Download link</a>
+Configured keyboard shortcut alt-D to bring up dmenu on top of screen.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2"><span class="section-number-4">4.1.2</span> tree</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<p>
+Utility to create tree structure out of directories. 
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> PyDSTool</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Getting Started</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Found a basic example <a href="http://www.ni.gsu.edu/~rclewley/PyDSTool/Tutorial/Tutorial_linear.html">here</a>
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-5-1-1" class="outline-4">
+<h4 id="sec-5-1-1"><span class="section-number-4">5.1.1</span> Basic 3-component negative feedback loop (of sorts)</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<pre class="example">
+from PyDSTool import *
+incons={'x':0,'y':0,'z':0}
+#def x_prod
+x_rec='kx-d*z'
+y_rec='k*x-d'
+z_rec='k*y-d*z'
+myvars={'x':x_rec,'y':y_rec,'z':z_rec}
+mypars={'kx':2,'k':2,'d':0.1}
+myDS=args()             # This is important. It sets up an empty `system' to which we will assign attributes
+myDS.name='x_Kin'       
+myDS.pars=mypars
+myDS.varspecs=myvars
+myDS.ics=incons
+myDS.tdata=[0,20]
+myODE=Generator.Vode_ODEsystem(myDS)    # Next important step. This calls the Generator thing and tests for consistency
+traj=myODE.compute('first')             # Not really sure what the argument is. Can be anything I think? This computes the trajectories
+pts=traj.sample()                       # Can pass time steps as argument. This generates the list of points            
+plt.plot(pts['x'],pts['z'])             # Plot
+plt.show()                              # Displays plot
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Bifurcations and more</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>PyDSTool comes with <a href="http://www.ni.gsu.edu/~rclewley/PyDSTool/PyCont.html#head-80e716dddbabca5f9aabaacdbdefd5d2eeeb6f47">Pycont</a>
+</li>
+<li>This is an example on the website:
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-python">"""Using PyCont to do path following to find a zero level set of a nonlinear
+function. Example is an ellipse.
+
+Robert Clewley, August 2008.
+"""
+
+from PyDSTool import *
+
+# f(y) = 0 is the required form
+# where f(y) = x^2 /2 + y^2 - 1
+DSargs = args(name='ellipse')
+
+# treat one of the coordinates as a parameter for PyCont to use
+DSargs.pars = {'x': 0}
+
+# the other coordinate is a 'variable'
+DSargs.varspecs = {'y': 'x*x/2.+y*y-1'}
+
+# A starting point on the ellipse, if known. Let's pretend it's a tougher
+# problem and we only know a point that's close to it: (x,y) = (0, 1.1)
+# PyCont will find the closest point that's actually on the curve before
+# doing the path following
+DSargs.ics = {'y': 1.1}
+
+# Define an initial value problem (ODE) with f(x) as the right hand side.
+# For this example, it is just a formality to present PyCont with f(x).
+# In examples involving fixed points or limit cycles of dynamical systems,
+# this ODE will have a practical meaning.
+testODE = Vode_ODEsystem(DSargs)
+
+# Create an instance of PyCont
+P = ContClass(testODE)
+
+# EP-C = equilibrium point curve
+PCargs = args(name='test', type='EP-C')
+PCargs.freepars = ['x']
+PCargs.StepSize = 1e-3
+PCargs.MaxNumPoints = 800
+PCargs.MaxStepSize = 1e-2
+
+# Declare a new curve based on the above criteria
+P.newCurve(PCargs)
+
+# Do path following in the 'forward' direction. Max points is large enough
+# to ensure we go right around the ellipse (PyCont automatically stops when
+# we return to the initial point - unless MaxNumPoints is reached first.)
+P['test'].forward()
+
+sol = P['test'].sol
+
+print "There were %i points computed" % len(sol)
+# solution points:
+print sol
+
+print "\nLabels for each point in sol pointset give diagnostic information about"
+print "first derivative of the point along the curve ('V' entry) and the arc "
+print "length parameter shows distance along the curve so far ('ds' entry)."
+
+print "\nVelocity around curve is always 1, e.g. look at 100th point"
+print "norm(Point(sol[100].labels['EP']['data'].V)) =", \
+      norm(Point(sol[100].labels['EP']['data'].V))
+
+print "... at which we have travelled distance ds =", \
+      sol[100].labels['EP']['data'].ds
+
+print "\nThis distance is equal to 100 * the max step size (0.01) which PyCont"
+print "deemed sufficient for the desired accuracy."
+
+# easy way to plot the result
+P.display(curves=['test'], coords=('x','y'))
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Need to understand how this works
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Python</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Comet implementation in Python</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-21 Wed&gt;</span></span>
+Found this piece of code on the internet:
+</p>
+<pre class="example">
+def comet(x, y, fmt='', step=1, **kwargs):
+    l, = plt.plot(x, y, fmt, **kwargs)
+    num_points = len(x)
+    for i in xrange(1, num_points + 1, step):
+        l.set_data(x[:i], y[:i])
+        plt.draw()
+    l.set_data(x, y)
+    plt.draw()
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Github</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Blogging With Jekyll</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-24 Sat&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li><i>Installed Jekyll using sudo apt install jekyll</i>
+</li>
+<li>Clone a username.github.io repo
+</li>
+<li>Run a server using <code>jekyll serve --config _config.yml</code>
+</li>
+<li>Add pages in the _posts/ folder with format YYY-MM-DD-TITLE.md
+</li>
+<li>pushing back to master will update the webpage
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Misc</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> Hemingway</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+<a href="http://www.hemingwayapp.com/">Website</a>
+</p>
+<ul class="org-ul">
+<li>Seems like an interesting way to keep track of sentence structure and readability
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2"><span class="section-number-3">8.2</span> Indic Language support</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-25 Sun&gt;</span></span>
+</p>
+<ul class="org-ul">
+<li>Installed emacs-intl-fonts package using sudo apt install
+</li>
+<li>Set path using (add-to-list 'bdf-directory-list "/usr/share/emacs/fonts/bdf")
+</li>
+<li>example:
+</li>
+</ul>
+<p>
+मेरा नाम है अमोघ जालीहाळ
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Amogh</p>
+<p class="date">Created: 2016-12-26 Mon 19:11</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
