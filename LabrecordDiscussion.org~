@@ -1,0 +1,15 @@
+#+TITLE: Note on maintenance of lab records
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./css/github-light.css"/>
+#+HTML_HEAD: <script src="./js/scale.fix.js"></script>
+#+INFOJS_OPT: view:info 
+A major challenge I faced during my rotation with the Hauf Lab was maintaining an electronic lab notebook. 
+
+<p>The advantages of maintaining a paper Lab Notebook are many, including the fact that you can scribble notes and observations at will, it is easy to carry around, and remains a physical record of the mistakes and corrections that you make. On the other hand, the advantages of an electronic labnotebook seem, now, to outweigh those of a traditional paper record. It took me a while to get used to typing out observations and comments during the experiment instead of writing them down, but the fact is that it isn't hard at all. I have experimented with OO and have created a lab notebook template including features for making ToDo lists and comments/observations sections not directly pertinent to the experiment. You can find it <a href="AJ_NB_Template.ott">here</a>. However, I have also come across the amazing power and magnificent beauty of LaTex (again!), and will now use <a href="http://www.latextemplates.com/template/daily-laboratory-book">this</a> package, which seems perfect for my needs.</p>
+
+<p><b>Update on 160201:</b> 
+<ul style="list-style-type:disc">
+  <li> Ever since I joined Dr. Murali's lab in spring 2016, my entire outlook towards documentation and file organization has changed. Enter <code>emacs24</code> and its amazing, all-powerful <code>org-mode</code>!!!!</li>
+  <li> A nice way of keeping track of the papers I read is turning out to be cite-u-like which is used by Murali and his group</li>
+  <li><a href="Intro-To-Org.html">Here</a> is a document, along with the <a href="Intro-To-Org.org">org-file</a> that I am creating that I hope will make Emacs an attractive text editor for non-coders well</li>
