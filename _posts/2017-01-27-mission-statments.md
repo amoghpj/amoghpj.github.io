@@ -3,6 +3,7 @@ title: "On Mission statements"
 layout: post
 headerImage: false
 image: /assets/images/education-expectations.png
+category: pfp-s17
 tag:
 - pfp-s17
 - higher-ed
