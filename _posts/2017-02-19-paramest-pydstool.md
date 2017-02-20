@@ -2,10 +2,10 @@
 title: Breaking down the ParamEst Class
 layout: post
 headerImage: false
-blog: true
 tag:
 - python
 - non-linear-systems
+blog: true
 ---
 I have been using the ``PyDSTool`` package by Rob Clewley for creating and simulating my models. This neat package allows you to worry about the creation and analysis of the model using a logical workflow rather than struggling with clumsy model definition functions like the ones Matlab's ode solvers require. The tools for bifurcation analysis are quite sophisticated, providing a programmatic interface to functionality otherwise found easily in XPP. Overall, the Python Dynamical Systems ToolBox is an amazing package for simulation of non-linear systems in python.
 
