@@ -2,6 +2,7 @@
 title: Breaking down the ParamEst Class
 layout: post
 headerImage: false
+blog: true
 tag:
 - python
 - non-linear-systems
