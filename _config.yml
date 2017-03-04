@@ -101,6 +101,7 @@ show-author: true
 # do you want some animations?
 animation: true
 
+highlighter: pygments
 sass:
     sass_dir: _sass
     style: :compressed
