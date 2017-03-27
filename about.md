@@ -13,5 +13,5 @@ Before I joined Virginia Tech, in Spring 2015, I worked with [Dr. Abby Dernburg]
 
 During the Summer of 2014, as part of [NIGINTERN](https://www.nig.ac.jp/jimu/soken/intern/2017/index.html) program at the [National Institute of Genetics, Japan](https://www.nig.ac.jp/nig/), I carried out a small project under the guidance of [Dr. Akatsuki Kimura](https://www.nig.ac.jp/nig/research/organization-top/organization/kimura) where I was introduced to nematode biology and image analysis.
 
-This webpage is my attempt at documenting some of my computational adventures systematically, and is essentially a hodge-podge of random things I have learned in my journey as a PhD student so far. Apart from microscopy, scripting and mathematical modeling, I also like listening to and making music, and love the beautiful outdoors here in Virginia.
+This webpage is my attempt at documenting some of my computational adventures systematically, and is essentially a hodge-podge of random things I have learned in my journey as a PhD student so far. Apart from microscopy, scripting and mathematical modeling, I also like listening to and making music.
 
