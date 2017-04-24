@@ -1,5 +1,5 @@
 ---
-title: "Attitudes towards change: How to influence?"
+title: "Attitudes in science: Influencing change"
 layout: post
 headerImage: false
 category: pfp-s17
