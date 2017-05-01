@@ -1,8 +1,8 @@
 ---
 title: "On Interdisciplinarity: Is Science too disciplined?"
 layout: post
-image: {{site.url}}/assets/silos.jpeg
 headerImage: true
+image: /assets/images/long-silos.png
 category: pfp-s17
 tag:
 - pfp-s17
@@ -18,4 +18,4 @@ It would appear that almost all of biological research in the last half century 
 
 In conclusion, I having studied the various facets of the term interdisciplinarity and a case study that sheds light on the limited understanding of the term and its implications, I propose that the fad of interdisciplinarity, (which has existed since the 1970s at the very least) is here to stay, but the rigors of carrying out scientific research, drawing inspiration from various fields and contributing to the entire spectrum of study from the abstract to the applied will proceed as usual.
 
-Header Image Source: http://www.allposters.co.jp/-sp/Grain-Elevator-Posters_i3591433_.htm
+[Header image source](http://www.allposters.co.jp/-sp/Grain-Elevator-Posters_i3591433_.htm)
