@@ -1,20 +1,3 @@
----
-title: "Compartmental model of cytoskeletal polarization during chemotaxis"
-layout: post
-headerImage: false
-tag:
-- python
-- biology
-- non-linear-systems
-projects: true
----
-This blog post summarizes the class project that I did with @boribong this semester. We created a phenomenological model of neutrophil polarization during chemotaxis, a straightforward attempt where we compartmentalized a cell radially to to simulate the heterogeneous cytoskeletal reorganization. Check out this cool animation that I made!
-F-actin polymerization in red, myosin contraction activity in Blog post coming soon!
-
-![Cytoskeletal Polarization]({{ site.url }}/assets/images/polarized-rewired.gif)
-
-This is my first attempt at creating a blog post directly from my jupyter notebook. Here goes! :)
-
 
 # Incorporating network structure into coupled cytoskeletal network
 
@@ -263,7 +246,7 @@ makeheatmap('Myosin',SimData[0])
 ```
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_9_0.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_9_0.png)
 
 
 
@@ -304,7 +287,7 @@ for i in range(0,5):
 ```
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_10_0.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_10_0.png)
 
 
 
@@ -334,7 +317,7 @@ for i in range(0,len(VALS)):
 ```
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_11_0.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_11_0.png)
 
 
 
@@ -375,7 +358,7 @@ plt.savefig('./cytoskeletal-network-rewiring.png')
 ```
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_14_0.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_14_0.png)
 
 
 # Generate animations
@@ -411,6 +394,8 @@ for t in tqdm(range(0,20)):
         ax[fig].set_title('$\\beta$='+B[fig])
     plt.savefig('./polarization-timecourse-t='+str(t)+'.png')
 ```
+
+     65%|██████▌   | 13/20 [01:20<00:43,  0.16it/s]
 
 # Generates Ligand distribution plots
 
@@ -457,7 +442,7 @@ ax[1].set_title('Perceived Ligand gradient')
 ```
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_18_0.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_18_0.png)
 
 
 # Generates consolidate heatmap collection of all variables with no rewiring
@@ -522,7 +507,7 @@ plt.savefig('./representative-results-compilation.png',dpi=500)
 
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_22_1.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_22_1.png)
 
 
 # Comparing strengths of ligand distribution
@@ -649,7 +634,7 @@ plt.savefig('chemotaxis-phenotype-ligand-input.png',dpi=500)
 ```
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_25_0.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_25_0.png)
 
 
 # Effect of network randomization
@@ -772,7 +757,7 @@ plt.savefig('rewiring-comparison.png',dpi=500)
 ```
 
 
-![png](/jupyter/Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_28_0.png)
+![png](Chemotaxis_Compartmental_Model_files/Chemotaxis_Compartmental_Model_28_0.png)
 
 
 No statistical difference observable. This will be more meaningful with more random networks maybe?
