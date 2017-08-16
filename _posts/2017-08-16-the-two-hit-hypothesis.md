@@ -20,11 +20,11 @@ Two years later, Knudson published his observations in *PNAS* in April, 1971 in 
 
 Retinoblastoma can either cause tumors in a single eye (unilateral), or in both eyes (bilateral). Using published data, Knudson argued that 55-65% of retinoblastoma cases, more than half of all cases, could be attributed to non-hereditary causes, and all of these cases happened to be unilateral. Next, Knudson examined the incidence of cancer in families known to carry the retinoblastoma, which is reproduced below
 
-	| Condition  | Frequency |
-	|------------|-----------|
-	| Unaffected | 1-10 %    |
-	| Unilateral | 25-40 %   |
-	| Bilateral  | 60-75 %   |
+| Condition  | Frequency |
+|------------|-----------|
+| Unaffected | 1-10 %    |
+| Unilateral | 25-40 %   |
+| Bilateral  | 60-75 %   |
 	
 What stands out is that 
 
