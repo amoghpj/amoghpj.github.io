@@ -16,7 +16,7 @@ This was at a time when the nature of cancer and the source of tumorigenesis was
 
 What he had succeeded in showing was the relationship between the *number of mutations* and the *age pf patient mortality*. However, the nature of mutations required for tumor formation in a general cancer context still remained an open question.
 
-Two years later, Knudson published his observations in *PNAS* in April, 1971 in a paper titled *Mutation and Cancer: Statistical Study of Retinoblastoma*. He refuted Ashley's claim about the requirement of 3-7 mutations to cause cancer. Rather he claimed that the requirement for cancer was as little as 2 cancer-causing mutations. For this, Knudesen chose retinoblastoma data from the M. D. Anderson Hospital. This cancer is not sex-linked, and there is a high enough incidence in children to rule out purely age-based causes.
+Two years later, Knudson published his observations in *PNAS* in April, 1971 in a paper titled *Mutation and Cancer: Statistical Study of Retinoblastoma*. He refuted Ashley's claim about the requirement of 3-7 mutations to cause cancer. Rather he claimed that the requirement for cancer was as little as 2 cancer-causing mutations. For this, Knudson chose retinoblastoma data from the M. D. Anderson Hospital. This cancer is not sex-linked, and there is a high enough incidence in children to rule out purely age-based causes.
 
 Retinoblastoma can either cause tumors in a single eye (unilateral), or in both eyes (bilateral). Using published data, Knudson argued that 55-65% of retinoblastoma cases, more than half of all cases, could be attributed to non-hereditary causes, and all of these cases happened to be unilateral. Next, Knudson examined the incidence of cancer in families known to carry the retinoblastoma, which is reproduced below
 
@@ -37,7 +37,7 @@ Making some approximate assumptions about the number of retinal cells and compar
 
 ![Knudson's data]({{site.url}}/assets/images/Kundson1971.png)
 
-Voila! The One-Hit curve coincides with the bilateral retinoblastoma data, the hereditary form, indicating that in tissue carrying a genetic mutation, a single new mutation is sufficient in causing cancer. Further, the Two-hit curve coincides with the unilateral retinoblastoma data, which is non-hereditary. Knudeson's reading of this result was that cancercinogenesis require *at least two independent mutations*. He states:
+Voila! The One-Hit curve coincides with the bilateral retinoblastoma data, the hereditary form, indicating that in tissue carrying a genetic mutation, a single new mutation is sufficient in causing cancer. Further, the Two-hit curve coincides with the unilateral retinoblastoma data, which is non-hereditary. Knudson's reading of this result was that cancercinogenesis require *at least two independent mutations*. He states:
 
 > If a second, single event is involved m the distribution of bilateral cases with time should be an exponential function, i.e., the fraction of the total cases that develops in a given period of time should be constant, as expressed in the relationship $\frac{dS}{dt}=-kS$ ... where S is the fraction of survivors not yet  diagnosed at time t, and dS is the change in this fraction in the interval dt.
 
