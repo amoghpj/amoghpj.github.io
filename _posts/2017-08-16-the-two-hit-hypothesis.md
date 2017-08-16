@@ -2,6 +2,7 @@
 title: "The Two-Hit Hypothesis: Insight from statistics"
 layout: post
 headerImage: False
+blog: true
 tag: 
 - biology
 ---
