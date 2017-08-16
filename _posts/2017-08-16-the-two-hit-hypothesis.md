@@ -19,9 +19,9 @@ Two years later, Knudson published his observations in *PNAS* in April, 1971 in 
 
 Retinoblastoma can either cause tumors in a single eye (unilateral), or in both eyes (bilateral). Using published data, Knudson argued that 55-65% of retinoblastoma cases, more than half of all cases, could be attributed to non-hereditary causes, and all of these cases happened to be unilateral. Next, Knudson examined the incidence of cancer in families known to carry the retinoblastoma, which is reproduced below
 
-	| Unaffected | 1-10 %  |
-	| Unilateral | 25-40 % |
-	| Bilateral  | 60-75 % |
+| Unaffected | 1-10 %  |
+| Unilateral | 25-40 % |
+| Bilateral  | 60-75 % |
 	
 What stands out is that 
 
@@ -32,7 +32,7 @@ The distribution of proportions in the three different classes of patients is ve
 
 Making some approximate assumptions about the number of retinal cells and comparing the statistics of cacner rates, Knudson was able to make predictions about the distribution of mutations with respect t oage in months assuming either a single tumor-causing mutation, or two independent tumor causing mutation events. The resuls of his analysis are shown here
 
-![{{site.url}}/assets/images/Kundson1971.png]
+![Knudson's data]({{site.url}}/assets/images/Kundson1971.png)
 
 Voila! The One-Hit curve coincides with the bilateral retinoblastoma data, the hereditary form, indicating that in tissue carrying a genetic mutation, a single new mutation is sufficient in causing cancer. Further, the Two-hit curve coincides with the unilateral retinoblastoma data, which is non-hereditary. Knudeson's reading of this result was that cancercinogenesis require *at least two independent mutations*. He states:
 
