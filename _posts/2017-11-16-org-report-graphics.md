@@ -22,7 +22,7 @@ Let me know if the following instructions are unclear, and I'll try to fix them!
 1.  Create an org-file called export-reports.org. This file will contain the org-report tables for all your tags.
 2.  Creating org-report tables:
     -   Assuming you have agenda files where you clock your effort with appropriate tags for tasks, create the following environment for ech tag that you want to generate a report for:
-    -   Notice that you have to modify 3 variables, the NAME of this table, the SCOPE that has to point to agenda file(s) and the TAGS. If you want to include multiple tags in a single report, use '|' as the OR logic for including tags. Alternatively if you want to specify combinations of tags you can use the '&' logic to separate tags.
+    -   Notice that you have to modify 3 variables, the NAME of this table, the SCOPE that has to point to agenda file(s) and the TAGS. If you want to include multiple tags in a single report, use "|" as the OR logic for including tags. Alternatively if you want to specify combinations of tags you can use the '&' logic to separate tags.
 
     #+NAME: tagname
     #+BEGIN: clocktable :maxlevel 4 :scope ("~/path/to/agenda/file.org") :block thisweek :tags "tagname"
