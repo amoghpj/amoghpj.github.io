@@ -35,9 +35,9 @@ As an example, I have a tag `work` that encompasses all research-related tasks, 
     #+END: 
 
 1.  Once you create such environments for *every* tag that you want to include in the report, move the cursor to each environment and generate the report for that tag using the key combination `C-c C-x C-u`. This will update the clock table.
-2.  In the same folder as your export-orgs.org file, add the following .el file (source: https://emacs.stackexchange.com/a/16883)
-    
-    (require 'org)
+2.  In the same folder as your export-orgs.org file, add the following .el file (source: https://emacs.stackexchange.com/a/16883)::
+
+    `(require 'org)
     (defun my-tbl-export (name)
     "Search for table named `NAME` and export."
     (interactive "s")
@@ -45,10 +45,10 @@ As an example, I have a tag `work` that encompasses all research-related tasks, 
     (let ((case-fold-search t))
     (if (search-forward-regexp (concat "#\\+NAME: +" name) nil t)
     (progn
-    (next-line)
-    (next-line)
-    (next-line)
-    (org-table-export (format "%s.csv" name) "orgtbl-to-csv")))))
+        (next-line)
+        (next-line)
+        (next-line)
+        (org-table-export (format "%s.csv" name) "orgtbl-to-csv")))))`
 
 1.  Next, copy the org-report-processing.sh and generate-org-report.py into the desired location. Modify the path to the export-report.org folder in both scripts.
 2.  Finally, simply run the shell script! This parses the export-report.org file and generates a list of tags, stored in tags.txt. Further, the elisp file is used to export all the report tables as individual .csvs. These files are read by the python script which finally generates plots summarizing the efforts. You should end up with something that looks like this:
