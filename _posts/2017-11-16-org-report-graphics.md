@@ -23,7 +23,7 @@ Let me know if the following instructions are unclear, and I'll try to fix them!
 2.  Creating org-report tables:
     -   Assuming you have agenda files where you clock your effort with appropriate tags for tasks, create the following environment for ech tag that you want to generate a report for:
     -   Notice that you have to modify 3 variables, the NAME of this table, the SCOPE that has to point to agenda file(s) and the TAGS. If you want to include multiple tags in a single report, use &#124; as the OR logic for including tags. Alternatively if you want to specify combinations of tags you can use the '&' logic to separate tags.
-
+    
     #+NAME: tagname
     #+BEGIN: clocktable :maxlevel 4 :scope ("~/path/to/agenda/file.org") :block thisweek :tags "tagname"
     #+END: 
@@ -35,27 +35,25 @@ As an example, I have a tag `work` that encompasses all research-related tasks, 
     #+END: 
 
 1.  Once you create such environments for *every* tag that you want to include in the report, move the cursor to each environment and generate the report for that tag using the key combination `C-c C-x C-u`. This will update the clock table.
-2.  In the same folder as your export-orgs.org file, add the following .el file,
-
-    ;; SOURCE: https://emacs.stackexchange.com/a/16883
+2.  In the same folder as your export-orgs.org file, add the following .el file (source: https://emacs.stackexchange.com/a/16883)
     
     (require 'org)
-    
     (defun my-tbl-export (name)
-      "Search for table named `NAME` and export."
-      (interactive "s")
-      (show-all)
-      (let ((case-fold-search t))
-        (if (search-forward-regexp (concat "#\\+NAME: +" name) nil t)
-        (progn
-          (next-line)
-          (next-line)
-          (next-line)
-          (org-table-export (format "%s.csv" name) "orgtbl-to-csv")))))
+    "Search for table named `NAME` and export."
+    (interactive "s")
+    (show-all)
+    (let ((case-fold-search t))
+    (if (search-forward-regexp (concat "#\\+NAME: +" name) nil t)
+    (progn
+    (next-line)
+    (next-line)
+    (next-line)
+    (org-table-export (format "%s.csv" name) "orgtbl-to-csv")))))
 
 1.  Next, copy the org-report-processing.sh and generate-org-report.py into the desired location. Modify the path to the export-report.org folder in both scripts.
 2.  Finally, simply run the shell script! This parses the export-report.org file and generates a list of tags, stored in tags.txt. Further, the elisp file is used to export all the report tables as individual .csvs. These files are read by the python script which finally generates plots summarizing the efforts. You should end up with something that looks like this:
-[]({{site.url}}/assets/images/2017-11-w3-report.png)
+
+[report-graphic]({{ site.url }}/assets/images/2017-11-w3-report.png)
 
 3.  Get to work!
 
