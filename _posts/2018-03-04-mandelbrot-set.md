@@ -17,7 +17,7 @@ The Mandelbrot set can be visualized by coloring the values of a complex paramet
 
 # Method
 
-For the code below, I used the cutoff of 2.0, and the maximum number of iterations for each value of $c$ as 100. I was curious to see how it would behave for non-integer exponents, so I decided to generate the Mandelbrot sets for $$n=[0.5,2.725]$$ in steps of 0.025.
+For the code below, I used the cutoff of 2.0, and the maximum number of iterations=100 for each value of $$c$$. I was curious to see how it would behave for non-integer exponents, so I decided to generate the Mandelbrot sets for $$n=[0.5,2.725]$$ in steps of 0.025.
 
     import numpy as np
     import matplotlib.pyplot as plt
