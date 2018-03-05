@@ -84,6 +84,6 @@ For the code below, I used the cutoff of 2.0, and the maximum number of iteratio
     plt.imshow(Output,cmap='viridis')
     plt.show()
 
-<img src="{{site.url}}/assets/images/mandelbrot_exponent_bw.gif" height="500" width="500">
+<center><img src="{{site.url}}/assets/images/mandelbrot_exponent_bw.gif" height="500" width="500"></center>
 
 Let me know what you think!
