@@ -21,7 +21,7 @@ url: http://amoghpj.github.io
 
 permalink: /:title/
 
-markdown: redcarpet
+# markdown: redcarpet
 # kramdown
 highlighter: rouge
 

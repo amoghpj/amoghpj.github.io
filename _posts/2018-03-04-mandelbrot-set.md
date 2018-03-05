@@ -13,7 +13,7 @@ I have never visualized the Mandelbrot set myself, and I was curious about how c
 
 # Background
 
-The Mandelbrot set can be visualized by coloring the values of a complex parameter $c$ by the number of iterations needed for the map $$z_{t+1}=z_{t}^n + c$$ to converge to a specified cutoff. The idea is to find how long, i.e. how many iterations it takes to achieve $$z_{t+1}=z_{t}=z^*$$, which I would like to think of as a steady state for the function. I am not quite sure what the intuition behind plotting the number of iterations is though. 
+The Mandelbrot set can be visualized by coloring the values of a complex parameter $$c$$ by the number of iterations needed for the map $$z_{t+1}=z_{t}^n + c$$ to converge to a specified cutoff. The idea is to find how long, i.e. how many iterations it takes to achieve $$z_{t+1}=z_{t}=z^*$$, which I would like to think of as a steady state for the function. I am not quite sure what the intuition behind plotting the number of iterations is though. 
 
 # Method
 
