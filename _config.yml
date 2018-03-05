@@ -21,7 +21,8 @@ url: http://amoghpj.github.io
 
 permalink: /:title/
 
-markdown: redcarpet#kramdown
+markdown: redcarpet
+# kramdown
 highlighter: rouge
 
 # To enable google analytics, supply your token below
