@@ -8,12 +8,13 @@ tag:
 - emacs
 - research 
 ---
-I have been using org-mode for my electronic lab notebook for about two years now and I can say my workflow is finally maturing.
+I have been using [org-mode](https://orgmode.org/) for my electronic lab notebook for about two years now, and I can say my workflow is finally maturing.
 
-I recently discovered YASnippets in emacs, and its been a game changer. Some context: I discovered org-ipython mode recently, and realized it fits my workflow much better than jupyter or ob-python. The main reasons for this were:
+I recently discovered YASnippets in Emacs, and it has been a game changer. Some context: I discovered ob-ipython mode recently, and realized it fits my workflow much better than jupyter or ob-python. The main reasons for this were:
 
-1. Asynchronous code blocks. I know this has been (kinda) solved in ![ob-async](https://github.com/astahlman/ob-async).
-2. Seamless inline figures. Ipython with the %matplotlib inline magic takes care of this beautifully
+0. Jupyter isn't Emacs.
+1. Asynchronous code blocks. I know this has been (kinda) solved in [ob-async](https://github.com/astahlman/ob-async).
+2. Seamless inline figures. Ipython with the %matplotlib inline magic takes care of this beautifully.
 3. Annoying src block definitions!
 
 The third reason was the main source of frustration. I came across the following snippet on the ob-ipython README to automatically insert the appropriate ipython src block:
@@ -28,9 +29,9 @@ The third reason was the main source of frustration. I came across the following
 #+END_SRC
 ```
 
-This blew my mind. I simply type 'ipy` and hit TAB and org-mode inserts the above temlate for me, placing the cursor at inside the block.
+This blew my mind. I simply type `ipy` and hit TAB and org-mode inserts the above temlate for me, placing the cursor at inside the block.
 
-Furthermore, recently I have been doing a series of small analyses on my model which don't fit in well with the rest of my Lab Notebook structure. I ended up using separate files for each analysis because the repeated simulations with necessarily verbose output ended up spamming my Notebook file. And instead of rewriting all the python headers in each analysis file, I decided to make a personalized template for analysis as follows:
+Furthermore, recently I have been doing a series of small analyses on my model which don't fit in well with the rest of my `LabNoteBook.org` structure. I ended up using separate files for each analysis because the repeated simulations with necessarily verbose output ended up spamming my Notebook file. And instead of rewriting all the python headers in each analysis file, I decided to make a personalized template for analysis as follows:
 
 ```
 # -*- mode: snippet -*-
