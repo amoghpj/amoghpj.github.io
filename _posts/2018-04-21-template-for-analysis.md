@@ -2,11 +2,11 @@
 title: "a YASnippet Template for an org-mode notebook"
 layout: post
 headerImage: false
+blog: true
 tag:
 - python
 - emacs
-- research
-projects: true
+- research 
 ---
 I have been using org-mode for my electronic lab notebook for about two years now and I can say my workflow is finally maturing.
 
