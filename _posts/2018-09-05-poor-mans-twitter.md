@@ -7,7 +7,7 @@ tag:
 - emacs
 ---
 
-A conversation with @reckoner165 brought up the notion that every trivial statement we make in social media is monetized somehow, somewhere. Is there a way to avoid any third party intrusion into an individual's access to their thoughts on the internet? [Beaker Broswer](https://beakerbrowser.com/) offers some alternatives, but I wondered if I can accomplish something similar with my current set of skills. [Here](amoghjalihal.com/social.html) is what I have come up with so far, and I thought I'd walk through what I've done.
+A conversation with @reckoner165 brought up the notion that every trivial statement we make in social media is monetized somehow, somewhere. Is there a way to avoid any third party intrusion into an individual's access to their thoughts on the internet? [Beaker Broswer](https://beakerbrowser.com/) offers some alternatives, but I wondered if I can accomplish something similar with my current set of skills. [Here](http://amoghjalihal.com/social.html) is what I have come up with so far, and I thought I'd walk through what I've done.
 
 Requirements:
 - Emacs (!!)
