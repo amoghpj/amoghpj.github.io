@@ -7,11 +7,6 @@ tag:
 - music
 ---
 
-# Table of Contents
-
-1.  [On thaats: the diff graph](#orgb14ef4f)
-
-
 <a id="orgb14ef4f"></a>
 
 # On thaats: the diff graph
@@ -242,7 +237,7 @@ constructed with edge-weights as the string diff of the notes.
 </table>
 
 Let us first construct the Graph. I write the edge list to file first.
-
+```python
     import pandas as pd
     from networkx import *
     import matplotlib.pyplot as plt
@@ -269,9 +264,11 @@ Let us first construct the Graph. I write the edge list to file first.
                       #edgetype=int,
                       nodetype=int,
                       encoding='utf-8')
+```                   
 
 We can now visualize the graph by coloring the edges by the edge weight.
 
+```python
     colordict = {1:'g',
                  2:'w',
                  3:'w',#'orange',#'orange',
@@ -290,11 +287,13 @@ We can now visualize the graph by coloring the edges by the edge weight.
     plt.savefig('thaat_diff-1.png',dpi=300)
     #return 'thaat_diff-1,2.png'
     #plt.show()
+```
 
 The green edges show edge weight of 1, i.e. these thaats differ by one note.
 
 ![img]({{ site.url}}/assets/images/thaat_diff-1.png)
 
+```python
     colordict = {1:'g',
                  2:'b',
                  3:'w',#'orange',#'orange',
@@ -313,11 +312,13 @@ The green edges show edge weight of 1, i.e. these thaats differ by one note.
     plt.savefig('thaat_diff-1,2.png',dpi=300)
     #return 'thaat_diff-1,2.png'
     #plt.show()
+```
 
 These include thaats that differ by one or two notes
 
 ![img]({{ site.url}}/assets/images/thaat_diff-1,2.png)
 
+```python
     colordict = {1:'g',
                  2:'b',
                  3:'orange',#'orange',
@@ -336,11 +337,12 @@ These include thaats that differ by one or two notes
     plt.savefig('thaat_diff-1,2,3.png',dpi=300)
     #return 'thaat_diff-1,2.png'
     #plt.show()
-
+```
 .. and those that differ by three&#x2026;
 
 ![img]({{ site.url}}/assets/images/thaat_diff-1,2,3.png)
 
+```python                
     colordict = {1:'g',
                  2:'b',
                  3:'orange',#'orange',
@@ -360,13 +362,15 @@ These include thaats that differ by one or two notes
     plt.savefig('thaat_diff-1,2,3,4.png',dpi=300)
     #return 'thaat_diff-1,2.png'
     #plt.show()
+```
 
-&#x2026; and finally up to four notes (in red).
+... and finally up to four notes (in red).
 
 ![img]({{ site.url}}/assets/images//thaat_diff-1,2,3,4.png)
 
 What thaats are similar to all other thaats? Look at number of thaats at most 2 notes different
 
+```python
     degreedict = {}
     for i in range(1,11):
        count =0
@@ -379,9 +383,24 @@ What thaats are similar to all other thaats? Look at number of thaats at most 2 
     
     for k in degreedict.keys():
        print(degreedict[k]['name'],degreedict[k]['count'])
+```
+
+```
+('Bilaval', 5)
+('Kafi', 4)
+('Bhairavi', 4)
+('Kalyan', 4)
+('Khamaj', 4)
+('Asavari', 3)
+('Bhairav', 5)
+('Marva', 5)
+('Poorvi', 4)
+('Todi', 4)
+```
 
 What thaats are most different from other thaats? Look at number of thaats that are more than 3 notes different.
 
+```python
     degreedict = {}
     for i in range(1,11):
        count =0
@@ -394,8 +413,22 @@ What thaats are most different from other thaats? Look at number of thaats that 
     
     for k in degreedict.keys():
        print(degreedict[k]['name'],degreedict[k]['count'])
+```
+```
+('Bilaval', 2)
+('Kafi', 4)
+('Bhairavi', 3)
+('Kalyan', 2)
+('Khamaj', 2)
+('Asavari', 3)
+('Bhairav', 1)
+('Marva', 3)
+('Poorvi', 3)
+('Todi', 3)
+```
 
-
+Putting it all together as an animation makes it clear that for the most part thaats are equally different from each other.
 ![and as an animated gif!]({{ site.url}}/assets/images/thaat_graph_1.gif)
+
 While these are purely abstract relationships between thaats, we will be exploring the significance of these relationships on the raags that constitute each thaat next week!
 
