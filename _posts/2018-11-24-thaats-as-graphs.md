@@ -293,7 +293,7 @@ We can now visualize the graph by coloring the edges by the edge weight.
 
 The green edges show edge weight of 1, i.e. these thaats differ by one note.
 
-![img](./thaat_diff-1.png)
+![img]({{ site.url}}/assets/images/thaat_diff-1.png)
 
     colordict = {1:'g',
                  2:'b',
@@ -316,7 +316,7 @@ The green edges show edge weight of 1, i.e. these thaats differ by one note.
 
 These include thaats that differ by one or two notes
 
-![img](./thaat_diff-1,2.png)
+![img]({{ site.url}}/assets/images/thaat_diff-1,2.png)
 
     colordict = {1:'g',
                  2:'b',
@@ -339,7 +339,7 @@ These include thaats that differ by one or two notes
 
 .. and those that differ by three&#x2026;
 
-![img](./thaat_diff-1,2,3.png)
+![img]({{ site.url}}/assets/images/thaat_diff-1,2,3.png)
 
     colordict = {1:'g',
                  2:'b',
@@ -363,7 +363,7 @@ These include thaats that differ by one or two notes
 
 &#x2026; and finally up to four notes (in red).
 
-![img](./thaat_diff-1,2,3,4.png)
+![img]({{ site.url}}/assets/images//thaat_diff-1,2,3,4.png)
 
 What thaats are similar to all other thaats? Look at number of thaats at most 2 notes different
 
@@ -395,5 +395,7 @@ What thaats are most different from other thaats? Look at number of thaats that 
     for k in degreedict.keys():
        print(degreedict[k]['name'],degreedict[k]['count'])
 
+
+![and as an animated gif!]({{ site.url}}/assets/images/thaat_graph_1.gif)
 While these are purely abstract relationships between thaats, we will be exploring the significance of these relationships on the raags that constitute each thaat next week!
 
