@@ -258,10 +258,8 @@ Let us first construct the Graph. I write the edge list to file first.
             for j in range(i+1,11):
                 E = cmp(str(list(DF['notes'].loc[DF['num'] == i])[0]), str(list(DF['notes'].loc[DF['num'] == j])[0]))
                 f.write(str(i) + '\t'+ str(j) + '\t' + str(E) + '\n')
-            #print(i,j,)
     
     G = read_weighted_edgelist('thaat_edge_list.txt',delimiter='\t',
-                      #edgetype=int,
                       nodetype=int,
                       encoding='utf-8')
 ```                   
@@ -277,16 +275,11 @@ We can now visualize the graph by coloring the edges by the edge weight.
     
     nodes = [i for i in range(1,11)]
     labels = {i:DF['name'][i] for i in range(1,11)}
-    # print([G[i][j]['weight'] for i,j in G.edges()])
     draw_circular(G,with_labels=True,nodelist=nodes,
-                  #width=[G[i][j]['weight'] for i,j in G.edges()]
                   edge_color=[colordict[G[i][j]['weight']] for i,j in G.edges()],
                   node_color='w',
                   labels=labels)
-    #plt.label('green=1, blue=2')
     plt.savefig('thaat_diff-1.png',dpi=300)
-    #return 'thaat_diff-1,2.png'
-    #plt.show()
 ```
 
 The green edges show edge weight of 1, i.e. these thaats differ by one note.
@@ -302,16 +295,12 @@ The green edges show edge weight of 1, i.e. these thaats differ by one note.
     
     nodes = [i for i in range(1,11)]
     labels = {i:DF['name'][i] for i in range(1,11)}
-    # print([G[i][j]['weight'] for i,j in G.edges()])
     draw_circular(G,with_labels=True,nodelist=nodes,
                   #width=[G[i][j]['weight'] for i,j in G.edges()]
                   edge_color=[colordict[G[i][j]['weight']] for i,j in G.edges()],
                   node_color='w',
                   labels=labels)
-    #plt.label('green=1, blue=2')
     plt.savefig('thaat_diff-1,2.png',dpi=300)
-    #return 'thaat_diff-1,2.png'
-    #plt.show()
 ```
 
 These include thaats that differ by one or two notes
@@ -327,16 +316,12 @@ These include thaats that differ by one or two notes
     
     nodes = [i for i in range(1,11)]
     labels = {i:DF['name'][i] for i in range(1,11)}
-    # print([G[i][j]['weight'] for i,j in G.edges()])
     draw_circular(G,with_labels=True,nodelist=nodes,
                   #width=[G[i][j]['weight'] for i,j in G.edges()]
                   edge_color=[colordict[G[i][j]['weight']] for i,j in G.edges()],
                   node_color='w',
                   labels=labels)
-    #plt.label('green=1, blue=2')
     plt.savefig('thaat_diff-1,2,3.png',dpi=300)
-    #return 'thaat_diff-1,2.png'
-    #plt.show()
 ```
 .. and those that differ by three&#x2026;
 
@@ -351,17 +336,12 @@ These include thaats that differ by one or two notes
     
     nodes = [i for i in range(1,11)]
     labels = {i:DF['name'][i] for i in range(1,11)}
-    # print([G[i][j]['weight'] for i,j in G.edges()])
     draw_circular(G,with_labels=True,nodelist=nodes,
                   #width=[G[i][j]['weight'] for i,j in G.edges()]
                   edge_color=[colordict[G[i][j]['weight']] for i,j in G.edges()],
                   node_color='w',
                   labels=labels)
-    #plt.label('green=1, blue=2')
-    #plt.legend()
     plt.savefig('thaat_diff-1,2,3,4.png',dpi=300)
-    #return 'thaat_diff-1,2.png'
-    #plt.show()
 ```
 
 ... and finally up to four notes (in red).
@@ -376,7 +356,6 @@ What thaats are similar to all other thaats? Look at number of thaats at most 2 
        count =0
        degreedict[i] = {'count':0,'name':labels[i]}
        for j in range(1, 11):
-          #print(G[i][j]['weight'])
           if  i!=j and G[i][j]['weight'] <= 2.0:
              count += 1
        degreedict[i]['count'] = count
@@ -406,7 +385,6 @@ What thaats are most different from other thaats? Look at number of thaats that 
        count =0
        degreedict[i] = {'count':0,'name':labels[i]}
        for j in range(1, 11):
-          #print(G[i][j]['weight'])
           if  i!=j and G[i][j]['weight'] > 3.0:
              count += 1
        degreedict[i]['count'] = count
