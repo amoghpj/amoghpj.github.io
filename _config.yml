@@ -34,7 +34,7 @@ highlighter: rouge
 
 # if you don't want comments in your posts, set to false
 disqus:
-        shortname: amoghpj-github-io
+    shortname: amoghpj-github-io
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
