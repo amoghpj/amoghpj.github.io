@@ -15,7 +15,7 @@ method that we used on thaats last week.
 - Satyajit pointed out that it would be possible to us the sangatis as a first level filter to identify thaats to narrow down an automated search for raags
   - This led to a side discussion on what pattern matching strategies are at work when experts identify raags.
 - Further exploring the classification of raags into thaats, Rutuja mentioned that it is possible for raags containing all the swars defining a thaat to not be included in it. This reminded me of a jugalbandi performance by Ashwiini Bhide Deshpande and Sanjeev Ahyankar exploring durga and bhupali simultaneously, in different keys.
-Here is the link: ![Ashwini Bhide Deshpande and Sanjeev Abhyankar sing Durga-Bhupali](https://www.youtube.com/watch?v=0lz-Ym91fRA)
+Here is the link: [Ashwini Bhide Deshpande and Sanjeev Abhyankar sing Durga-Bhupali](https://www.youtube.com/watch?v=0lz-Ym91fRA)
 Consider the raags independently:
 Bhupali: SRGPDS
 Durga:   SRMPDS
