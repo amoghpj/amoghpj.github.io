@@ -17,7 +17,7 @@ file lives in its own folder, has a common set of headers meant for prettier lat
 as well as a document wide setup for code execution.
 
 I found myself doing all of the above manually, except for the header
-specification, for which I had a yas-snippet. I finally decided to try
+specification, for which I had a [yas-snippet](http://amoghpj.github.io/template-for-analysis/). I finally decided to try
 my hand at writing some lisp to get some keywords from the
 user, automatically create the folder, and fill out the header for my analysis file.
 
