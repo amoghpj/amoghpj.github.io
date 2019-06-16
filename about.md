@@ -17,10 +17,10 @@ This webpage is my attempt at documenting some of my computational adventures sy
 
 # Publications and Preprints
 
-- Pratap, A., **Jalihal, A. P.**, Law, J. N., Bharadwaj, A., and
+- Pratapa, A., **Jalihal, A. P.**, Law, J. N., Bharadwaj, A., and
   Murali, T.M., (2019) Benchmarking algorithms for gene regulatory
   network inference from single-cell transcriptomic data. [preprint](https://doi.org/10.1101/642926), [Beeline](https://github.com/Murali-group/Beeline), [BoolODE](https://github.com/Murali-group/BoolODE)
-- Pratapa, A., **Jalihal, A. P.**, Ravi, S. S., & Murali, T. M. (2018,
+- Pratapa, A., **Jalihal, A. P.**, Ravi, S. S., and Murali, T. M. (2018,
   August). Efficient Synthesis of Mutants Using Genetic Crosses. In
   Proceedings of the 2018 ACM International Conference on
   Bioinformatics, Computational Biology, and Health Informatics
