@@ -29,6 +29,7 @@ picture: assets/images/me.jpeg
 # Build settings
 
 highlighter: rouge
+
 plugins:
   - jekyll-feed
 disqus: amoghpj
