@@ -307,7 +307,7 @@ The green edges show edge weight of 1, i.e. these thaats differ by one note.
 
 These include thaats that differ by one or two notes
 
-![img]({{ site.url}}/assets/images/thaat_diff-1,2.png)
+![img](/assets/images/thaat_diff-1,2.png)
 
 ```python
     colordict = {1:'g',
@@ -327,7 +327,7 @@ These include thaats that differ by one or two notes
 ```
 .. and those that differ by three&#x2026;
 
-![img]({{ site.url}}/assets/images/thaat_diff-1,2,3.png)
+![img](/assets/images/thaat_diff-1,2,3.png)
 
 ```python                
     colordict = {1:'g',
@@ -348,7 +348,7 @@ These include thaats that differ by one or two notes
 
 ... and finally up to four notes (in red).
 
-![img]({{ site.url}}/assets/images//thaat_diff-1,2,3,4.png)
+![img](/assets/images//thaat_diff-1,2,3,4.png)
 
 What thaats are similar to all other thaats? Look at number of thaats at most 2 notes different
 
@@ -408,7 +408,7 @@ What thaats are most different from other thaats? Look at number of thaats that 
 ```
 
 Putting it all together as an animation makes it clear that for the most part thaats are equally different from each other.
-![and as an animated gif!]({{ site.url}}/assets/images/thaat_graph_1.gif)
+![and as an animated gif!](/assets/images/thaat_graph_1.gif)
 
 While these are purely abstract relationships between thaats, we will be exploring the significance of these relationships on the raags that constitute each thaat next week!
 
