@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1>{{ page.title}}</h1>
-<b> ({{ page.date | date_to_string }})</b>
+<subtitle> ({{ page.date | date_to_string }})<subtitle>
 <tagstyle>
 {% for tag in page.tag %}
 <a href="/tag/{{tag}}">{{tag}}</a>
