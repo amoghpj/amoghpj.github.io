@@ -286,7 +286,7 @@ We can now visualize the graph by coloring the edges by the edge weight.
 
 The green edges show edge weight of 1, i.e. these thaats differ by one note.
 
-![img]({{ site.url}}/assets/images/thaat_diff-1.png)
+![img](/assets/images/thaat_diff-1.png)
 
 ```python
     colordict = {1:'g',

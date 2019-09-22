@@ -54,10 +54,10 @@ plt.show()
 {% endhighlight %}
 
 The resulting plot was a little surprising. For one, the largest model seemed to have about 800 variables, which I am curious about. Also, there are evidently problems with this SBML parsing, because a large number of models seem to lie on the abcissa with no parameters.
-![Full Comparison Plot]({{site.url}}/assets/images/full-analysis-plot.png)
+![Full Comparison Plot](/assets/images/full-analysis-plot.png)
 
 To make more sense of this data, I went one step ahead and tried to get a linear fit to this data. For this, I cleaned up the data by removing points that lie on the axes. Also, I stuck to models with around 150 variables as the upper limit to represent a 'typical' model.
 
-![Least Squares Plot]({{site.url}}/assets/images/least-squares-fit.png)
+![Least Squares Plot](/assets/images/least-squares-fit.png)
 
 This is rather surprising, because I had expected the parameter size to increase rather drastically as the model size increases. The overall trend in a general increase in parameter number, but it really looks like the modelers like to keep their paramters to the minimum. This definitely calls for a closer look at the statistics!

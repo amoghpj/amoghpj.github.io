@@ -12,7 +12,7 @@ projects: true
 This blog post summarizes the class project that I did with @boribong this semester. We created a phenomenological model of neutrophil polarization during chemotaxis, a straightforward attempt where we compartmentalized a cell radially to to simulate the heterogeneous cytoskeletal reorganization. Check out this cool animation that I made!
 F-actin polymerization in red, myosin contraction activity in Blog post coming soon!
 
-![Cytoskeletal Polarization]({{ site.url }}/assets/images/polarized-rewired.gif)
+![Cytoskeletal Polarization](/assets/images/polarized-rewired.gif)
 
 This is my first attempt at creating a blog post directly from my jupyter notebook. Here goes! :)
 

@@ -54,7 +54,7 @@ As an example, I have a tag `work` that encompasses all research-related tasks, 
 1.  Next, copy the org-report-processing.sh and generate-org-report.py into the desired location. Modify the path to the export-report.org folder in both scripts.
 2.  Finally, simply run the shell script! This parses the export-report.org file and generates a list of tags, stored in tags.txt. Further, the elisp file is used to export all the report tables as individual .csvs. These files are read by the python script which finally generates plots summarizing the efforts. You should end up with something that looks like this:
 
-![report-graphic]({{ site.url }}/assets/images/2017-11-w3-report.png)
+![report-graphic](/assets/images/2017-11-w3-report.png)
 
 3.  Get to work!
 

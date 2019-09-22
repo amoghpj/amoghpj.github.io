@@ -8,7 +8,6 @@ research: true
 hidden: true # don't count this post in blog pagination
 ---
 
-
 ![Nutrient Regulated cell growth](https://www.dropbox.com/s/t3panfkpb5w0tzf/nutrien-signaling-in-yeast-illustration.png?raw=1)
 
 It is a basic biological fact that all organisms interact with and modify the environment they live in, primarily in order to *survive*, and hence *propagate* their genes. In order to support the transmission of the DNA encoding an individual's traits, it is necessary to create the cellular machinery that can support the *interpretation* of the information stored in said DNA, the *translation* of these instructions stored as (abstract) chemical sequences into biologically active molecules, which are finally required to *execute* the decoded instructions, which aid the individual in adapting to a given environment. All of these biological processes require raw materials in the form of nutrients in order to construct structural and functional components of the cell, along with their share of chemical energy in order for biochemical processes to occur at biologically realistic timescales.

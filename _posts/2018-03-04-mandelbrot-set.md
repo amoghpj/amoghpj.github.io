@@ -87,6 +87,6 @@ plt.imshow(Output,cmap='viridis')
 plt.show()
 ```
 
-<center><img src="{{site.url}}/assets/images/mandelbrot_exponent_bw.gif" height="500" width="500"></center>
+<center><img src="/assets/images/mandelbrot_exponent_bw.gif" height="500" width="500"></center>
 
 Let me know what you think!
