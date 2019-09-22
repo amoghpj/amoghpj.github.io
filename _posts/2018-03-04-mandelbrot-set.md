@@ -2,6 +2,7 @@
 title: "Fun with Mandelbrot sets"
 layout: post
 headerImage: false
+description: Visualizing the Mandelbrot set using matplotib
 tag:
 - python
 projects: true
@@ -19,70 +20,72 @@ The Mandelbrot set can be visualized by coloring the values of a complex paramet
 
 For the code below, I used the cutoff of 2.0, and the maximum number of iterations=100 for each value of $$c$$. I was curious to see how it would behave for non-integer exponents, so I decided to generate the Mandelbrot sets for $$n=[0.5,2.725]$$ in steps of 0.025.
 
-    import numpy as np
-    import matplotlib.pyplot as plt
-    from tqdm import tqdm
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+
+
+def mandelbrot(z,c,exponent):
+    return(z**exponent+c)
     
+XMIN=-1.5
+XMAX=1.5
+YMIN=-1.5
+YMAX=1.5
+XSTEPS=1000
+YSTEPS=1000
+exponent=2.725
+
+Grid=[]
+X=np.linspace(XMIN,XMAX,XSTEPS)
+Y=np.linspace(YMIN,YMAX,YSTEPS)
+
+for x in X:
+    for y in Y:
+        Grid.append((x,y))
+
+print(len(Grid))
+
+CUTOFF=2.0
+NUMITER=100
+
+Mandelbrot_value=[]
+
+for g in tqdm(Grid):
+
+    x,y=g
+    c=np.complex(x,y)
+    it=0
+
+    z=0.0+0.0j
+    SUCCESS=True
+
+    while it<NUMITER:
+        z=mandelbrot(z,c,exponent)
+        if np.abs(z)>CUTOFF:
+            SUCCESS=False
+            break
+        it+=1
+
+    Mandelbrot_value.append(it)
+
+minD=min(Mandelbrot_value)
+maxD=max(Mandelbrot_value)
+
+Output=[]
+i=0
+for x in X:
+    row=[]
+    for y in Y:
+        row.append(maxD-Mandelbrot_value[i])
+        i+=1
+    Output.append(row)
     
-    def mandelbrot(z,c,exponent):
-        return(z**exponent+c)
-    
-    XMIN=-1.5
-    XMAX=1.5
-    YMIN=-1.5
-    YMAX=1.5
-    XSTEPS=1000
-    YSTEPS=1000
-    exponent=2.725
-    
-    Grid=[]
-    X=np.linspace(XMIN,XMAX,XSTEPS)
-    Y=np.linspace(YMIN,YMAX,YSTEPS)
-    
-    for x in X:
-        for y in Y:
-            Grid.append((x,y))
-    
-    print(len(Grid))
-    
-    CUTOFF=2.0
-    NUMITER=100
-    
-    Mandelbrot_value=[]
-    
-    for g in tqdm(Grid):
-    
-        x,y=g
-        c=np.complex(x,y)
-        it=0
-    
-        z=0.0+0.0j
-        SUCCESS=True
-    
-        while it<NUMITER:
-            z=mandelbrot(z,c,exponent)
-            if np.abs(z)>CUTOFF:
-                SUCCESS=False
-                break
-            it+=1
-    
-        Mandelbrot_value.append(it)
-    
-    minD=min(Mandelbrot_value)
-    maxD=max(Mandelbrot_value)
-    
-    Output=[]
-    i=0
-    for x in X:
-        row=[]
-        for y in Y:
-            row.append(maxD-Mandelbrot_value[i])
-            i+=1
-        Output.append(row)
-        
-    plt.figure(figsize=(15,15))    
-    plt.imshow(Output,cmap='viridis')
-    plt.show()
+plt.figure(figsize=(15,15))
+plt.imshow(Output,cmap='viridis')
+plt.show()
+```
 
 <center><img src="{{site.url}}/assets/images/mandelbrot_exponent_bw.gif" height="500" width="500"></center>
 

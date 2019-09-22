@@ -1,114 +1,53 @@
-# main text of home
-name: Amogh Jalihal
-bio: Biologist, computational and otherwise
-title: AJ
-# twitter summary info
-description: Blog of a biology grad student
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-picture: assets/images/me.jpeg
-
-# If you want to include your resume, set to true
-# and specify source (external or local).
-resume: true
-resume-external: false
-resume-url: assets/cv.pdf
-
-url: http://amoghpj.github.io
-# your url: http://USERNAME.github.io
-
-permalink: /:title/
-
-# markdown: redcarpet
-# kramdown
-highlighter: rouge
-
-# To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
-
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
-
-# if you don't want comments in your posts, set to false
-disqus: amoghpj-github-io
-
-# if you don't have any of social below, comment the line
-# facebook: myfacebook
-twitter: amogh_jalihal
-# google: mygoogle
-instagram: randompheromone
-# pinterest: mypinterest
-# linkedin: mylinkedin
-# youtube: myyoutube
-# spotify: myspotify
-github: amoghpj
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-# medium: medium
-# vimeo: myvimeo
+title: Amogh Jalihal
 email: amogh.jalihal@gmail.com
-
-authors:
-    johndoe:
-        name: Amogh Jalihal
-        bio: Biologist
-        external-image: false
-        picture: assets/images/me.jpg
-        twitter: amogh_jalihal
-
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: large 
-
-# if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
-
-# if you don't need projects, comment the *projects* configs below
-projects: true
-
-research: true
-include: ["_research"]
-# if you don't need "about" or "blog", comment them out below
-about: true
-blog: true
-
-# do you want to show the "read time" of the posts?
-read-time: true
-
-# do you want to show the "tags" inside the posts?
-show-tags: true
-
-# related posts inside a post?
-related: true
-
-# show next & prev links in blog post?
-blog-nav-links: false
-
-# show author block at the end of a post ?
-show-author: true
-
-# do you want some animations?
-animation: true
+name: Amogh Jalihal
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "amoghpj.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: amogh_jalihal
+github_username:  amoghpj
+picture: assets/images/me.jpeg
+# Build settings
 
 highlighter: rouge
-sass:
-    sass_dir: _sass
-    style: :compressed
-
-gems:
-  - jemoji
-  - jekyll-mentions
-  - jekyll-seo-tag
+plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-paginate
-
-jekyll-mentions:
-    base_url: https://github.com
+disqus: amoghpj
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

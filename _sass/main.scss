@@ -1,0 +1,134 @@
+.current {
+    color: green;
+}
+.default {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 100%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 230px;
+  background-color: #ffffff; 
+  overflow-x: scroll; /* Disable horizontal scroll */
+  overflow-y: scroll; /* Disable horizontal scroll */  
+  padding-top: 20px;        
+    h1 {
+        font-family: "Arial";
+        font-size: 40px;
+        margin-left: 1%;                
+    }
+    datestyle {
+        font-family: "Arial";
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 1%;                        
+    }
+    liststyle {
+        font-family: "Arial";
+        font-size: 20px;
+        margin-left: 1%;                        
+    }        
+    h2 {
+        font-family: "Arial";
+        font-size: 35px;
+        margin-left: 1%;                        
+    }
+    subtitle {
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 2%;        
+    }
+    tagstyle {
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 2%;        
+    }            
+    p {
+        font-size: 100%;
+        margin-left: 2%;
+        font-family: Arial;
+        width: 60%;
+    }
+    ul {
+        font-size: 100%;
+        margin-left: 2%;
+        width: 60%;
+    }
+    li {
+        font-size: 100%;
+        margin-left: 2%;
+        width: 60%;
+    }
+    // code {
+    //     font-size: 100%;
+    //     margin-left: 2%;
+    //     width: 60%;
+    // }       
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    a {
+        color: #fc0328;
+    }
+    
+}
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 230px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  //background-color: #40384d; /* Black */
+  background-color: #ff2400;//#fc0328;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;    
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Sans Serif";
+  font-weight: bold;
+  color: #ffffff;  
+  display: block;
+}
+
+.disqus {
+    margin-left: 1%;
+    left: 230px;
+    max-width: 70%;
+}
+
+.column {
+    flex: 30.0%;
+    padding: 5px;
+    img{
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+}
+.icon{
+    margin-left: 30%;
+    top:50%;
+    img{
+        display: block;
+        height: 30px;
+        width: 30px;
+    }}
+.row::after {
+    display: flex;
+}
+
+.footer {
+    font-size: 15px;
+    bottom: 0; /* Stay at the top */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    color: #ffffff;
+}

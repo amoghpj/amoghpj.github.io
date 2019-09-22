@@ -2,6 +2,7 @@
 title: "Agent Based Simulation of a chronic Influenza infection"
 layout: post
 headerImage: false
+description: An animation from our Mod and Sim class showing the spread of infection using an agent-based model
 tag:
 - python
 - biology

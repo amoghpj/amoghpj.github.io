@@ -1,7 +1,7 @@
 ---
 title: "Nutrient Signaling in budding yeast"
 layout: post
-date: 2016-01-23 22:10
+description: An overview of my research project
 tag: biology
 headerImage: true
 research: true

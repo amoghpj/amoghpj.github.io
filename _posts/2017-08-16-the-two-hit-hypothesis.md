@@ -1,6 +1,7 @@
 ---
 title: "The Two-Hit Hypothesis: Insight from statistics"
 layout: post
+description: What I learned about Knudson's two-hit hypothesis
 headerImage: False
 blog: true
 tag: 

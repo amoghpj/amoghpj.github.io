@@ -1,7 +1,8 @@
 ---
-title: "2018-12-01: Towards constructing relationship graphs between raags"
+title: "Towards constructing relationship graphs between raags"
 layout: post
 headerImage: false
+description: A post capturing the discussion on relationships between raags from this week's kala meeting
 blog: true
 tag:
 - music

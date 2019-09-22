@@ -12,7 +12,7 @@ To get a rough idea about this trend, I wanted to simply plot the number of para
 
 To download the SBML files of the models, I used this hacky script:
 
-{% highlight python %}
+``` python
 import wget
 from tqdm import tqdm
 for i in tqdm(range(0,625)):
@@ -25,7 +25,7 @@ for i in tqdm(range(0,625)):
     if i>=100 and i<1000:
         f=wget.download("https://www.ebi.ac.uk/biomodels-main"
 	"/download?mid=BIOMD0000000"+str(i),"./sbml-files/")
-{% endhighlight %}
+```    
 
 Once I had the roughly 625 SBML files (which took about 15 minutes), I used the libSBML module to read and extract the number of parameters and species from each model using something like this:
 

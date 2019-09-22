@@ -2,6 +2,7 @@
 title: "Exploring the relationships between thaats in Hindustani Music"
 layout: post
 headerImage: false
+description: Creating a graph based on shared notes between thaats
 blog: true
 tag:
 - music

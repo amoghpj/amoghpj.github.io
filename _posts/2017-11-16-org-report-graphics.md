@@ -2,6 +2,7 @@
 title: "Scripts to generate graphic summaries of weekly org-reports"
 layout: post
 headerImage: false
+description: An alternative to toggl for pretty summaries of org-clock info
 tag:
 - emacs
 - org-mode

@@ -1,6 +1,7 @@
 ---
 title: "a YASnippet Template for an org-mode notebook"
 layout: post
+description: A yasnippet to define a template for a generic computational analysis "experiment"
 headerImage: false
 blog: true
 tag:

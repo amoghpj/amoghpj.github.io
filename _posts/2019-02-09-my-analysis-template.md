@@ -2,6 +2,7 @@
 title: "My first elisp function: Create an analysis template"
 layout: post
 headerImage: false
+description: A function to populate an org file with boilerplate containing python headers and org-export descriptions.
 blog: true
 tag:
 - emacs

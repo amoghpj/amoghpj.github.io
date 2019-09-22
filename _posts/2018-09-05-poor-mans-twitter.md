@@ -2,6 +2,7 @@
 title: "A poor man's twitter using org-capture"
 layout: post
 headerImage: false
+description: A rough ssh-based pipeline to "capture" a tweet-like text and push to a remote web server
 blog: true
 tag:
 - emacs
@@ -20,7 +21,7 @@ First create an org file with suitable html specific headers. (You can add arbit
 
 Setup org-capture with something that looks like this. Put this in your init.el in the .emacs.d folder:
 
-```
+```emacs-lisp
   (setq org-capture-templates
         '(
           ("s" "Social" entry (file+olp "~/public_html/social.org" "Social")
