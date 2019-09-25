@@ -29,3 +29,4 @@ Last updated on `22 Sep 2019`
 - [The bitter lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) - *Richard Sutton*
 - [On the cruelty of really teaching computer science](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1036.html) - *Edsger Dijkstra*
 - [Mitchell Feigenbaum (1944-2019)](https://blog.stephenwolfram.com/2019/07/mitchell-feigenbaum-1944-2019-4-66920160910299067185320382/) - *Stephen Wolfram*
+- [The Salvation of Doug, and The Demise of Bill](http://www2.biology.ualberta.ca/locke.hp/dougandbill.htm) - *William Sullivan, Douglas Kellogg*
