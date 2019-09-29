@@ -19,9 +19,14 @@ Last updated on `22 Sep 2019`
 
 ## Papers
 
+**Classics**
+
 - The Spandrels of San Marco and the Panglossian Paradigm: a Critique of the Adaptationist Programme - *S. J. Gould and R. C. Lewontin, 1979*
 - Dependency on Medium and Temperature of Cell Size and Chemical Composition During Balanced Growth of Salmonella Typhimurium - *M Schaechter, O. Maaloe, N. O. Kjeldgaard, 1958*
 - Preponderance of synonymous changes as evidence for the neutral theory of molecular evolution - *Motoo Kimura, 1977*
+
+**Recent**
+- Intercellular Competition and the Inevitability of Multicellular Aging - *Paul Nelson and Joanna Masel, 2017*
 
 ## Essays
 
