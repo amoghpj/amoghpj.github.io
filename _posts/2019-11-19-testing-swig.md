@@ -1,12 +1,11 @@
 ---
-title: ""Testing SWIG: Using C modules in python""
+title: "Testing SWIG: Using C modules in python"
 layout: post
 description: "faster functions in C, maybe."
 blog: true
 tags: 
-    - python
+- python
 ---
-
 
 I came across Dave Beazely's SWIG last week. Opens a whole new
 world of possiblities in terms of fast code using custom C modules,
