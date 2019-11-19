@@ -18,14 +18,18 @@ The following has worked so far.
 
 
 ## Create header and module file
+
 Header file
-```C
+
+```c
 #define PI 4.0
 extern float pi_by_2();
 ```
 
 Module file
-```C
+
+```c
+
 #include<stdio.h>
 #include "pitest.h"
 
@@ -40,7 +44,7 @@ void main(){
 
 ## Now make a .i file that SWIG needs
 
-```C
+```c
 %module pitest
 %{
 #include "pitest.h"
