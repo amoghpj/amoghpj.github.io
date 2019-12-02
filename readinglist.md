@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `22 Sep 2019`
+Last updated on `2 Dec 2019`
 
 ## Books
 
@@ -16,6 +16,7 @@ Last updated on `22 Sep 2019`
 
 - The Dark Forest Trilogy -  *Liu Cixin*
 - Kafka on the shore -  *Haruki Murakami*
+- The Brothers Karamazov - *Fyodor Dostoyevsky*
 
 ## Papers
 
@@ -27,6 +28,7 @@ Last updated on `22 Sep 2019`
 
 **Recent**
 - Intercellular Competition and the Inevitability of Multicellular Aging - *Paul Nelson and Joanna Masel, 2017*
+- Information Gerrymandering and Undemocratic Decisions - *Stewart et al., 2018*
 
 ## Essays
 
