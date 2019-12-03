@@ -2,7 +2,8 @@
 title: "Multithreading is Python is a pain"
 description: "Or how I learned about the GIL"
 layout: post
-tags: 
+blog: true
+tag: 
 - python
 ---
 
