@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `2 Dec 2019`
+Last updated on `11 Jan 2020`
 
 ## Books
 
@@ -21,7 +21,7 @@ Last updated on `2 Dec 2019`
 ## Papers
 
 **Classics**
-
+ 
 - Dependency on Medium and Temperature of Cell Size and Chemical Composition During Balanced Growth of Salmonella Typhimurium - *M Schaechter, O. Maaloe, N. O. Kjeldgaard, 1958*
 - More is Different - *P.W. Anderson, 1972*
 - Preponderance of synonymous changes as evidence for the neutral theory of molecular evolution - *Motoo Kimura, 1977*
