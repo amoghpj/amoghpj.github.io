@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `11 Jan 2020`
+Last updated on `18 Jan 2020`
 
 ## Books
 
@@ -38,3 +38,4 @@ Last updated on `11 Jan 2020`
 - [On the cruelty of really teaching computer science](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1036.html) - *Edsger Dijkstra*
 - [Mitchell Feigenbaum (1944-2019)](https://blog.stephenwolfram.com/2019/07/mitchell-feigenbaum-1944-2019-4-66920160910299067185320382/) - *Stephen Wolfram*
 - [The Salvation of Doug, and The Demise of Bill](http://www2.biology.ualberta.ca/locke.hp/dougandbill.htm) - *William Sullivan, Douglas Kellogg*
+- [What Nihilism is not](group/amogh-jalihal/papers/Nutrient-Signaling-Model/) - *Nolen Gertz, from* Nihilism
