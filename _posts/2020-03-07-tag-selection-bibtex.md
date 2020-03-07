@@ -3,14 +3,14 @@ title: "Utility function to control the tags vocabulary in a bibtex file"
 description: "Messing around with elisp again!"
 layout: post
 blog: true
-tags: 
+tag: 
 - emacs
 ---
 
 
 I have started to add a custom 'tags' field in bibtex entries. 
 
-```bibtex
+```latex
 @article{1998_Nature_Watts_Small_World,
   author =	 {Watts, Duncan J. and Strogatz, Steven H.},
   title =	 {Collective Dynamics of `small World' Networks},
