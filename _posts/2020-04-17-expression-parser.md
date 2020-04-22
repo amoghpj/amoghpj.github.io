@@ -10,7 +10,7 @@ tag:
 *Note:*
 
 -   *I've been looking for a python implementation that converts a Boolean expression stored as a string, to a polynomial, also returned as a string. The hardest part of this conversion was writing a parser for arbitrarily nested expressions. Here is my implementation. Doesn't handle `xor` yet!*
--   *This document uses the noweb syntax. Please tangle the ![source org file](/assets/files/2020-04-17-expression-parser.org) to generate parser.py*
+-   *This document uses the noweb syntax. Please tangle the [source org file](/assets/files/2020-04-17-expression-parser.org) to generate parser.py*
 
 
 # Outline
