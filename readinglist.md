@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `30 April 2020`
+Last updated on `14 May 2020`
 
 ## Books
 
@@ -10,6 +10,7 @@ Last updated on `30 April 2020`
 
 - Reconceptualizing India Studies - *S. N. Balagangadhara*
 - Do all roads lead to Jerusalem? - *S. N. Balagangadhara*
+- As Others See Us - *S. N. Balagangadhara, Divya Jhingran*
 - Chance and Necessity - *Jacques Monod*
 - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
 
