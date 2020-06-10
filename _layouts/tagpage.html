@@ -5,10 +5,11 @@ layout: default
 <h1>Tag: {{ page.tag }}</h1>
 
 {% for post in site.tags[page.tag] %}
-<b>({{ post.date | date_to_string }})</b> -  <a href="{{ post.url }}">{{ post.title }}</a> <br>
+<p><code>〈{{ post.date | date_to_string }}〉</code> - <a href="{{ post.url }}">{{ post.title }}</a></p>
+<!-- <br> -->
 <p style="margin-left:100px">  {{ post.description }}</p>
-<br>
- <br> 
+<!-- <br> -->
+<!-- <br>  -->
 {% endfor %}
 </div>
 <hr>

@@ -1,5 +1,10 @@
 @import url(monokai.css);
 
+$right-spacing: 5%;
+$sidebar-color: #ffffff;
+$sidebar-width: 12%;
+$main-left: $sidebar-width + 2%;
+$main-width: 75%;
 .current {
     color: green;
 }
@@ -13,22 +18,55 @@
   font-size:20px;
   font-family: "Courier New";
 }
+.sidebar nav {
+    text-align: right;
+}
 
 .default {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 100%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 220px;
-  background-color: #ffffff; 
-  overflow-x: scroll; /* Disable horizontal scroll */
-  overflow-y: scroll; /* Disable horizontal scroll */  
-  padding-top: 20px;        
+    .highlighter-rouge {
+        padding-left: 2px !important;
+    }
+    .highlight{
+        position: relative;
+    }
+    left: $main-left;
+    z-index: 1; /* Stay on top */
+    // top: 1; /* Stay at the top */
+    position: fixed;
+    height: 90%; /* Full-height: remove this if you want "auto" height */
+    width: $main-width; /* Set the width of the sidebar */ 
+
+}
+
+.defaultexpand {
+    .highlighter-rouge {
+        padding-left: 2px !important;
+    }
+    .highlight{
+        position: relative;
+    }
+    left: 0%; 
+    z-index: 1; /* Stay on top */
+    // top: 1; /* Stay at the top */
+    position: fixed;
+    height: 90%; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */ 
+
+}
+
+.main {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */ 
+    position: absolute; /* fixed Fixed Sidebar (stay in place on scroll) */
+    background-color: #ffffff; 
+    overflow-x: scroll; /* Disable horizontal scroll */
+    overflow-y: scroll; /* Disable horizontal scroll */  
+    padding-top: 20px;        
     h1 {
-        font-family: "Arial";
+        font-family: "Modern";// "Arial";
         font-size: 40px;
-        margin-left: 1%;                
+        margin-left: 1%;
+        text-decoration: underline;            
     }
     datestyle {
         font-family: "Arial";
@@ -61,7 +99,7 @@
         margin-left: 2%;
         font-family: Arial;
         font-size: 25px;        
-        width: 80%;
+        // width: 80%;
     }
     // ul {
     //     font-size: 100%;
@@ -72,7 +110,7 @@
         font-size: 25px;
         font-family: Arial;        
         margin-left: 2%;
-        width: 60%;
+        // width: 60%;
     }
     // code {
     //     font-size: 100%;
@@ -86,19 +124,62 @@
         width: 40%;
     }
     a {
-        color:#a83232;// #a84232;//#fc0328;
+        color: #a83232;// #a84232;//#fc0328;
     }
-    
 }
+.top {
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    z-index: 1; /* Stay on top */
+    // left: 230px;
+
+}
+
+.sidebar-hidden{
+    display: none;
+}
+
+.expand {
+    left: $main-left;
+    width:50px;
+    height:50px;
+    // border: solid;
+}
+
+.sidebar-right {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: $sidebar-width; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    //background-color: #40384d; /* Black */
+    background-color: $sidebar-color;// #eeeeee;
+    // #ff2400;//#fc0328;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+.search-wrapper{
+    margin-left: 10%;
+}
+#results-container{
+    width: 80%;
+}
+#search-input{
+    width: 80%;
+}
+
 .sidebar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 230px; /* Set the width of the sidebar */
+  width: $sidebar-width; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   //background-color: #40384d; /* Black */
-  background-color: #000000;// #ff2400;//#fc0328;
+  background-color: $sidebar-color;// #ff2400;//#fc0328;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;    
 }
@@ -109,7 +190,7 @@
   font-size: 25px;
   font-family: "Sans Serif";
   font-weight: bold;
-  color: #ffffff;  
+  color: #a83232;// #111111;  
   display: block;
 }
 
@@ -129,9 +210,12 @@
     }
 }
 .icon{
-    margin-left: 30%;
-    top:50%;
+    margin-left: 65%;
+    top: 50%;
+    // border: solid;
+    width: auto;
     img{
+    right: 0;
         display: block;
         height: 30px;
         width: 30px;
@@ -142,10 +226,12 @@
 
 .footer {
     font-size: 15px;
-    bottom: 0; /* Stay at the top */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    bottom: 2%; /* Stay at the top */
+    // position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    color: #ffffff;
+    position: absolute;
+    text-align: right;
+    margin: $right-spacing;
+    right: 0;
+    color: #000000; // #ffffff;
 }
-
-

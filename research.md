@@ -7,7 +7,7 @@ budding yeast *S. cerevisiae*. For more details, check out my [blog post]({{site
 
 I have also made an interactive app to learn about [mechanistic cell cycle models](http://cellcyclemodels.herokuapp.com)
 
-### Publications
+# Publications
 
 **Jalihal, A.P.**, Kraikivski, P, Murali, T.M., Tyson, J.J, 2020. [Modeling and analysis of macronutrient signaling in budding yeast](https://www.biorxiv.org/content/10.1101/2020.02.15.950881v1). bioRxiv
 

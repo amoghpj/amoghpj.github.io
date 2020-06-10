@@ -4,7 +4,7 @@ title: Reading list
 ---
 Last updated on `14 May 2020`
 
-## Books
+# Books
 
 **Non fiction**
 
@@ -20,7 +20,7 @@ Last updated on `14 May 2020`
 - Kafka on the shore -  *Haruki Murakami*
 - The Brothers Karamazov - *Fyodor Dostoyevsky*
 
-## Papers
+# Papers
 
 **Classics**
  
@@ -33,7 +33,7 @@ Last updated on `14 May 2020`
 - Intercellular Competition and the Inevitability of Multicellular Aging - *Paul Nelson and Joanna Masel, 2017*
 - Information Gerrymandering and Undemocratic Decisions - *Stewart et al., 2018*
 
-## Essays
+# Essays
 
 - [Who can name the bigger number?](https://www.scottaaronson.com/writings/bignumbers.html) - *Scott Aronson*
 - [The bitter lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) - *Richard Sutton*

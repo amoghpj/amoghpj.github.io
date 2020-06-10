@@ -3,32 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-<link rel="stylesheet" href="https://latex.now.sh/style.css">     
-    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
 
   <body>
     <div class="sidebar">
       {% include navigation.html %}
-        <!-- <div class="icon"> -->
-        <!--   <a href="http://www.twitter.com/amogh_jalihal"> -->
-        <!--     <img src="/assets/images/twitter-white.png"></a> -->
-        <!-- </div> -->
-        <!-- <div class="icon"> -->
-        <!--   <a href="http://www.github.com/amoghpj"> -->
-        <!--     <img src="/assets/images/github-white.png"></a> -->
-        <!-- </div> -->
-        <!-- <div class="icon"> -->
-        <!--   <a href="mailto:amogh.jalihal@gmail.com"> -->
-        <!--     <img src="/assets/images/email-white.png"></a> -->
+        <div class="icon">
+          <a href="http://www.twitter.com/amogh_jalihal">
+            <img src="/assets/images/twitter-red-1.png"></a>
         </div>
+        <div class="icon">
+          <a href="http://www.github.com/amoghpj">
+            <img src="/assets/images/github-red-2.png"></a>
+        </div>
+        <div class="icon">
+          <a href="mailto:amogh.jalihal@gmail.com">
+            <img src="/assets/images/email-red-2.png"></a>
+        </div>
+        <div class="icon">
+          <a href="/feed.xml">
+            <img src="/assets/images/rss-red-2.png"></a>
+        </div>
+        
+
     <div class="footer">      
       {% include footer.html %}          
     </div>      
-
     </div>
+    <div class="sidebar-right">
+      <!-- HTML elements for search -->
+      <div class="search-wrapper">
+        <input type="text" id="search-input" placeholder="Search blog posts..">
+        <ul id="results-container"></ul>
+        
+      </div>
+    </div>    
     <div class="default">
-      {{ content }}
+      <div class="expand">
+            <img id="button" src="/assets/images/button-hide-1.svg" height="45">
+      </div>
+      
+      <div class="main">
+        {{ content }}
+      </div>
     </div>  
       <!-- Default Statcounter code for Personal http://amoghpj.github.io -->
 <script type="text/javascript">
@@ -44,5 +62,9 @@ StatCounter" href="https://statcounter.com/" target="_blank"><img
 class="statcounter" src="https://c.statcounter.com/12188204/0/c84f4bce/1/"
 alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
 <!-- End of Statcounter Code -->
+
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<script src="/assets/js/search.js"></script>
   </body>
+  
 </html>
