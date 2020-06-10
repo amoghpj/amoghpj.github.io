@@ -17,7 +17,7 @@ expand_button.addEventListener("click", function(){
     sidebar1.classList.toggle('sidebar-hidden', !sidebar_collapsed);
     sidebar2.classList.toggle('sidebar-hidden', !sidebar_collapsed);
     defaultpage.classList.toggle('defaultexpand', !sidebar_collapsed);
-    if (!sidebar_collapsed){
+    if (sidebar_collapsed){
         icon.src = "/assets/images/button-hide-1.svg";}
     else{
         icon.src = "/assets/images/button-reveal-1.svg";
