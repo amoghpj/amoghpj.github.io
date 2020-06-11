@@ -6,14 +6,14 @@ title: About
 
 ![Profile Image]({{site.url}}/assets/images/me.jpeg)
 
-Hi! I am Amogh Jalihal and I am currently a PhD Candidate at [Virginia
-Tech](http://www.vt.edu/), in the Genetics, Bioinformatics, and
-Computational Biology Program. My current research interest involves
+Hi! I am Amogh Jalihal and I have a PhD from the [Genetics, Bioinformatics, and
+Computational Biology Program](https://gbcb.graduateschool.vt.edu/) at [Virginia
+Tech](http://www.vt.edu/). My graduate research involved
 dynamical modeling of biological processes, specifically in the
-context of yeast biology.  I am currently co-advised by Professors
+context of yeast biology, and I was co-advised by Professors
 [John Tyson](http://mpf.biol.vt.edu/lab_website/) and
 [T.M. Murali](http://bioinformatics.cs.vt.edu/~murali/). Details of my
-current research project can be found
+the research project can be found
 [here](/2017/01/01/nutrient-signaling.html).
 
 Previously, in Fall 2016, I worked with [Dr. Silke
