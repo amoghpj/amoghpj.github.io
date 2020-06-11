@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `14 May 2020`
+Last updated on `11 June 2020`
 
 # Books
 
@@ -13,6 +13,7 @@ Last updated on `14 May 2020`
 - As Others See Us - *S. N. Balagangadhara, Divya Jhingran*
 - Chance and Necessity - *Jacques Monod*
 - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
+- The Art and Politics of Science - *Harold Varmus*
 
 **Fiction**
 
