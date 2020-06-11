@@ -1,0 +1,19 @@
+To serve the site:
+
+#+begin_src bash
+bundle exec jekyll serve
+#+end_src
+
+To run locally, use this diff in =Gemfile=
+#+begin_src 
+@@ -7,7 +7,8 @@ source "https://rubygems.org"
+ #
+ # This will help ensure the proper Jekyll version is running.
+ # Happy Jekylling!
+-gem "jekyll", "~> 3.6.3"
++#gem "jekyll", "~> 3.6.3"
++gem "jekyll", "~> 3.3.0"
+ #gem "just-the-docs"#, "~> 2.5"
+ # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+ # uncomment the line below. To upgrade, run `bundle update github-pages`.
+#+end_src
