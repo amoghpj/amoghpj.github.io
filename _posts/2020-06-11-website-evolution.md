@@ -55,7 +55,7 @@ For a while it was merely cosmetic.
 
 ![img](/assets/images/nov19-dec19.jpg)
 
-## 2019 - 2020 (June)
+# 2019 - 2020 (June)
 
 Another major color theme change.
 
