@@ -1,7 +1,7 @@
 ---
 title: "Landing page evolution of my site"
 layout: post
-description: Git history makes it worth effort!
+description: Git history makes it worth the effort!
 blog: true
 tag:
 - me
@@ -16,7 +16,7 @@ changes or too few changes per commit, terrible commit messages, and tons of unn
 files. But I am glad that I have stuck to one repo, because it has allowed me to
 roll back to older versions and see what they looked like. Here's the gallery.
 
-## 2016-2017
+# 2016-2017
 
 The oldest commit on the repo is from the 5th of December 2015, a plain HTML page with
 some ascii art of my face. But starting in November 2016, I started using the minimal mistakes theme.
@@ -24,7 +24,7 @@ some ascii art of my face. But starting in November 2016, I started using the mi
 
 ![img](/assets/images/dec15-feb2017.jpg)
 
-## 2017-2019
+# 2017-2019
 
 In the second year of my PhD, probably inspired by people like Daniel Chen and Mitch Wagner, I upgraded
 to the Indigo theme. I think I understood more of how Jekyll worked this time around. I think this is 
@@ -36,7 +36,7 @@ weekly blogs.
 ![img](/assets/images/feb17-oct19.jpg)
 
 
-## 2019 October - November
+# 2019 October - November
 
 I finally outgrew Indigo in the middle of 2019. I had been increasingly seeing blogs setup to loosely template-wrap
 org-mode markdown content. I liked the idea a lot, but having to migrate all my content out of Jekyll markdown
@@ -48,7 +48,7 @@ the CSS/HTML interactions with the Jekyll template specifications.
 ![img](/assets/images/oct19-nov19.jpg)
 
 
-## 2019 November - December
+# 2019 November - December
 
 I have been steadily learning more about CSS and fine tuning my setup since the major change.
 For a while it was merely cosmetic.
