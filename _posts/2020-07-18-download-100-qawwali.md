@@ -27,23 +27,27 @@ I was initally planning on using `wget` to download the actual files from URLs, 
     if not os.path.exists(datapath):
         wget.download(frontpage, datapath)
 ```
-
-Copied from here:
-<https://docs.python.org/3/library/html.parser.html>
+Some quick grepping showed that this page contains links to other HTML webpages for each track, which in turn has a Download link for the track. To parse each page, I started off with the template example on the python documentation site for the [HTML parser](https://docs.python.org/3/library/html.parser.html) to store links from html `attr`s that lead to other webpages. I fine-tuned the conditional to get the links I was interested in. 
 ```python
     from html.parser import HTMLParser
     from html.entities import name2codepoint
     
     class MyHTMLParser(HTMLParser):
         def __init__(self):
-            HTMLParser.__init__(self)
-            self.links = []
+            HTMLParser.__init__(self) # This is important to inherit HTMLParser's local variables
+            self.links = []           # list to store links
     
         def handle_starttag(self, tag, attrs):
             for attr in attrs:
                 k, v = attr
+                # Somewhat arbitrary filter which gets the job done
                 if k == 'href' and ('thesufi.com/sufimusic/' in v and  '.html' in v) and (len(v.split('/')) > 5):
                     self.links.append(v)
+```
+
+Using this parser, I extracted the relevant links to webapges and dumped them in a file called `data/alllinks`
+ 
+```python
 
     parser = MyHTMLParser()
     data = ""
@@ -55,9 +59,15 @@ Copied from here:
             outfile.write(l+'\n')
 ```
 
-Next, download each link from `alllinks`, parse them for a .mp3 link attr, and use wget to download that file
 
-Here is the parser which stores all links that end with .mp3
+This is the main loop. For each link the the file:
+
+1.  download the webpage if it doesn't exist, while handling 404 errors with a try block
+2.  read the webpage in as a string
+3.  parse the webpage and collect all links which end with .mp3 using the ParseMP3 class.
+4.  download the mp3 file, while handling any request errors.
+
+First, I had to define another HTML parser to look for mp3 links
 
 ```python
     class ParseMP3(HTMLParser):
@@ -72,7 +82,7 @@ Here is the parser which stores all links that end with .mp3
                     self.mp3link.append(v)
 ```
 
-Read the list of links stored to file
+Next, I read the list of links from `data/alllinks`, which I will loop over
 
 ```python
     alllinks = []
@@ -81,15 +91,10 @@ Read the list of links stored to file
             alllinks.append(link.strip())
 ```
 
-This is the main loop. For each link the the file:
-
-1.  download the webpage if it doesn't exist, while handling 404 errors with a try block
-2.  read the webpage in as a string
-3.  parse the webpage and collect all links which end with .mp3 using the ParseMP3 class.
-4.  download the mp3 file, while handling any request errors.
+Finally, here's the main loop, as described above
 
 ```python
-    for link in tqdm(alllinks[1:]):
+    for link in tqdm(alllinks[1:]):  # Hack starting from second element, because first link was not relevant!
         print("Current link: ", link)
         # Download the webpage
         fname = 'data/' + link.split('/')[-1]
