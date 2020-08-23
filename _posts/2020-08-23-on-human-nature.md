@@ -1,5 +1,5 @@
 ---
-title: "E.O. Wilson's *On human nature*"
+title: "Thoughts on E.O. Wilson's On Human Nature"
 layout: post
 description: Book review
 tag:
