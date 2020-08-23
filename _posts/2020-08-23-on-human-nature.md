@@ -16,12 +16,13 @@ Wilson presents a grand vision for sociobiology. The book is beautifully written
 In *Religion*, Wilson criticizes Marxism, building a case from his outline of hereditary ideological systems to show that Marxism's ultimate failure is that despite its "scientific" origins, it falls into the very trappings of dogma that it seeks to overthrow.
 Wilson's approach of treating culture as a process undergoing Darwinian evolution is refreshing. The text is peppered with glorious statements like this one
 
-> Man's destiny is to know, is only because societies with knowledge culturally dominate societies that lack it. Luddites and anti-intellectuals do not maste rthe differential equations of thermodynamics of the biochemical cures of illnessess. They stay in thatched huts and die young. Cultures with unifying goals will learn more rapidly than those that lack them, and an autocatalytic growth of learning will follow because scientific materialsim is the only mythology that can manufacture great goals from the sustained pursuit of pure knowledge.
+> Man's destiny is to know, is only because societies with knowledge culturally dominate societies that lack it. Luddites and anti-intellectuals do not master the differential equations of thermodynamics or the biochemical cures of illnessess. They stay in thatched huts and die young. Cultures with unifying goals will learn more rapidly than those that lack them, and an autocatalytic growth of learning will follow because scientific materialsim is the only mythology that can manufacture great goals from the sustained pursuit of pure knowledge.
 
-The final chapter *Hope* has Wilson extrapolating from his position, an entomologist reflecting on human societies trapped in his Western tradition, to claim that Progress is inevitable. That, disappointingly is  Wilsons' failing.
+The final chapter *Hope* has Wilson extrapolating from his position, a myrmecologist reflecting on human societies trapped in his Western tradition, to claim that Progress is inevitable. That, disappointingly is  Wilsons' failing.
 
-**Eugenics**
-In the final pages, (in hindsight ironically titled "Hope") of , Wilson admits to his aspirations of eugenics, though heavily qualified. There are two mentions of the word "eugenics" in this chapter, (in fact the only in the whole book), and I believe it is important to understand what Wilson was trying to get at here:
+## **Eugenics**
+
+In the final pages of the book, (in hindsight ironically titled "Hope"), Wilson reveals his aspirations for eugenics. There are two mentions of the word "eugenics" in this chapter, (in fact the only two in the whole book), and I believe it is important to understand what Wilson was trying to get at here:
 
 1.  The first is his belief in scientific progressivism, coupled with a utilitarian aspiration derived from throwing the moral arrow in to the well-mixed gene pool.
     
@@ -34,15 +35,17 @@ Genetics has arrived at Wilson's vision, but not the social sciences.
 
 Wilson's insistence on progressivism explains the political backlash of recent decades <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. Is he a eugenicist? By his own admittance, he hopes for cultural-genetic "progress" in his scientific humanist project. But is he a racist, with unscientific claims of cultural/ethnic/racial superiority? I think not.
 
-Wilson still has a lot to offer in terms of understanding cultural evolution. From my more recent readings (for example Michael Muthukrishna's "A problem in Theory", or his talk <https://www.youtube.com/watch?v=F7SvrC15AMo&feature=youtu.be>), I was quite surprised to find the prominence, or possibly the resurgence of Dual Inheritance Theory.
+Wilson still has a lot to offer in terms of understanding cultural evolution. From my more recent readings (for example Michael Muthukrishna's "A Problem in Theory", or his talk <https://www.youtube.com/watch?v=F7SvrC15AMo&feature=youtu.be>), I was quite surprised to find the prominence, or possibly the resurgence of Dual Inheritance Theory.
 
 Some interesting perspectives from the book
 
 -   Wilson takes an aggressively anti-church stand in his defense of sexuality.
 -   The writing style is interesting. At multiple points Wilson proposes many alternative hypotheses/proposals for moving ahead in an area of research. Though he ultimately favors only one of these, the intention is to invite the reader to explore the alternatives.
 -   While I am unaware of contemporary anthropological standing on the measure of evidence used by Wilson, he does a remarkable job in attempting to relate human anthropology with primate behavior and animal behavior at large. The encyclopedic approach is striking, and Wilson himself is excited by the possibilities of unexplored avenues of research. Examples include: analysis of slave trade, cultures of slaves, reflections on hunter-gatherer societies through the ages and in contemporary tribes, comparisons between religions and philosophies.
+-   The book betrays its era by admitting its naive optimism in the promise of genetics and molecular biology. Wilson mentions the "hundreds of thousands" of genes in the human genome multiple times, and is confident that the genetic complexity hides within it the keys to sociobiology. I would love to read a later reflection by Wilson on the state of human genetics.
 
+Overall, **On Human Nature** makes for a great read, providing insight into the promise that modern biology held at the brink of the era of genetic engineering. The first seven chapters make for a classic reading in progressivism, and Wilson's optimism is contagious.
 
-# Footnotes
+ __Footnotes__
 
 <sup><a id="fn.1" href="#fnr.1">1</a></sup> He mentions the Yanamamo people, in *Aggression* and seems to foretell the controversies that would befall the anthropological studies that describe them, as described in *Galileo's Middle Finger* by Alice Dreger.
