@@ -4,6 +4,7 @@ layout: post
 description: Book review
 tag:
 - biology
+- review
 blog: true
 ---
 The last time I considered sociobiology seriously was probably 2015-16 after having read *Naturalist* (1994), before I had any real exposure to the challenges of modern biology. *On Human Nature* was written in 1979, four years after *Sociobiology: The New Synthesis*. Seems appropriate that it is the first book I read in close proximity to Harvard.

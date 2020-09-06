@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `11 June 2020`
+Last updated on `5 September 2020`
 
 # Books
 
@@ -14,6 +14,7 @@ Last updated on `11 June 2020`
 - Chance and Necessity - *Jacques Monod*
 - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
 - The Art and Politics of Science - *Harold Varmus*
+- On Human Nature - *E.O. Wilson*
 
 **Fiction**
 
@@ -42,3 +43,4 @@ Last updated on `11 June 2020`
 - [Mitchell Feigenbaum (1944-2019)](https://blog.stephenwolfram.com/2019/07/mitchell-feigenbaum-1944-2019-4-66920160910299067185320382/) - *Stephen Wolfram*
 - [The Salvation of Doug, and The Demise of Bill](http://www2.biology.ualberta.ca/locke.hp/dougandbill.htm) - *William Sullivan, Douglas Kellogg*
 - [What Nihilism is not](https://thereader.mitpress.mit.edu/what-nihilism-is-not/) - *Nolen Gertz, from* Nihilism
+- A Tract Against the Prevailing System of Hindoo Idolatory - *Raja Rammohun Roy, 1820*
