@@ -6,7 +6,8 @@ title: About
 
 ![Profile Image]({{site.url}}/assets/images/me.jpeg)
 
-Hi! I am Amogh Jalihal and I have a PhD from the [Genetics, Bioinformatics, and
+Hi! I am Amogh Jalihal and I am a postdoctoral researcher at [Harvard Medical School](https://hms.harvard.edu/), 
+working with [Prof. Michael Springer's](https://springerlab.org/) group. I have a PhD from the [Genetics, Bioinformatics, and
 Computational Biology Program](https://gbcb.graduateschool.vt.edu/) at [Virginia
 Tech](http://www.vt.edu/). My graduate research involved
 dynamical modeling of biological processes, specifically in the
