@@ -15,6 +15,7 @@ Last updated on `5 September 2020`
 - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
 - The Art and Politics of Science - *Harold Varmus*
 - On Human Nature - *E.O. Wilson*
+- Among The Believers - *V. S. Naipaul*
 
 **Fiction**
 
