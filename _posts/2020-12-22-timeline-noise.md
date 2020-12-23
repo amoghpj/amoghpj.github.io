@@ -9,53 +9,26 @@ blog: true
 
 I spent a few days last week catching up with the literature on stochastic gene expression. Here is the timeline that I put together. It is a work in progress, but I found a lot of interesting new ideas when assembling this table!
 
-| Year | Description                                                                | Citation                                                           |
-|------|----------------------------------------------------------------------------|--------------------------------------------------------------------|
-| 1977 | Gillespie publishes the exact SSA                                          | [^1977_jpc_gillespie_exact_stochastic_simulation]                  |
-| 1989 | Tyson at VT builds on Alt-Tyson1986 in an attempt to                       | [^1989_matbio_tyson_asymmetric_division_stochastic]                |
-|      | build a model of cell size distribution for                                |                                                                    |
-|      | asymmetric division and stochastic process                                 |                                                                    |
-|      | governing production of cell cycle activator                               |                                                                    |
-| 1997 | McAdams and Arkin at Stanford propose the first model of "stochastic" gene | [^1997_pronatacasci_mcadams_stochastic_mechanisms]                 |
-|      | expression, thinking about delays in activation of circuits if             |                                                                    |
-|      | expression is noisy. Focus on prokaryotic expression, use SSA.             |                                                                    |
-|      | Good untuitive development of Poisson statistics ideas.                    |                                                                    |
-| 2001 | Thattai at MIT uses the SSA to characterize a few simple regulatory        | [^2001_pnas_thattai_intrinsic_noise]                               |
-|      | systems. Compare simulations to analytical results                         |                                                                    |
-| 2002 | Swain and others at Rockefeller draw a distinction between intrinsic and   | [^2002_pnas_swain_intrinsic_extrinsic_contributions]               |
-|      | extrinsic noise, and report the first formal analysis of expected          |                                                                    |
-|      | noise including bursting. This paper also gives the reason for defining    |                                                                    |
-|      | noise as variance/mean, showing that this definition allows us             |                                                                    |
-|      | to simply add up intrinsic and extrinsic noise to get total noise.         |                                                                    |
-| 2004 | Raser and O'Shea introduce the two color experiments                       | [^2004_sci_raser_control_stochasticity_eukaryotic]                 |
-|      | to distinguish intrinsic and extrinsic noise                               |                                                                    |
-| 2005 | Paulsson reviews the state of art theory. Includes                         | [^2005_phylifrev_paulsson_stochastic_expression]                   |
-|      | work by Elowitz, van Oudenaarden.                                          |                                                                    |
-| 2005 | Kussel and Leibler publish theory showing                                  | [^2005_sci_kussell_phenotypic_diversity_growth_information]        |
-|      | the advantages of stochastic phenotype switching.                          |                                                                    |
-|      | This puts stochastic gene expression as the basis of                       |                                                                    |
-|      | bet hedging, a non genetic basis of variation.                             |                                                                    |
-| 2006 | First global  survey of expression noise, led by Arren Bar-Even            | [^2006_NatGen_Bar-Even_Noise_Protein_Expression_Scales]            |
-|      | which systematically interrogates the origin of noise                      |                                                                    |
-| 2007 | So what are the consequences of noise? Di Talia and others at Rockefeller  | [^2007_DiTalia_Molecular_Noise_Size_Control]                       |
-|      | ask if cell cycle time distributions are in agreement with                 |                                                                    |
-|      | the expected noise in molecular regulators. The style is different, the    |                                                                    |
-|      | measurements are not even molecular!                                       |                                                                    |
-| 2009 | Taking a significant leap forward, Kar in Tyson's group shows that         | [^2009_pronatacasci_kar_noise_cell_cycle]                          |
-|      | a stochastic version of mechanistic cell cycle model produces              |                                                                    |
-|      | the expected cell cycle timing distributions.                              |                                                                    |
-| 2013 | Sanchez and Golding show a markedly different                              | [^2013_science_sanchez_genetic_determinants_noisy_gene_expression] |
-|      | global transcriptional noise structure in yeast as                         |                                                                    |
-|      | compared to bacteria and mammalian cells. Consequences?                    |                                                                    |
-| 2015 | Keren sources the origin of the growth rate coupling of noise              | [^2015_genres_keren_noise_gene_expression_growth_rate]             |
-|      | to the population distributions in G1 and G2. The ploidy                   |                                                                    |
-|      | ratios are a simple explanation of growth rate dependent noise.            |                                                                    |
-| 2015 | Metzger in Patricia Wittkopp's group at Michigan shows that                | [^2015_nat_metzger_selection_noise_constrains]                     |
-|      | noise has consequences at the sequence level, bringing evolution           |                                                                    |
-|      | into the picture.                                                          |                                                                    |
-| 2018 | Duveau studied the consequences for cellular fitness. An important         | [^2018_eli_duveau_fitness_effects_noise]                           |
-|      | contribution is the experiment design: increasing noise while holding      |                                                                    |
-|      | mean expression constant.                                                  |                                                                    |
+| Year | Description                                                                                                                                                                                                                                       | Citation                                                           |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| 1977 | Gillespie publishes the exact SSA                                                                                                                                                                                                                 | [^1977_jpc_gillespie_exact_stochastic_simulation]                  |
+| 1989 | Tyson at VT builds on Alt-Tyson1986 in an attempt to build a model of cell size distribution for asymmetric division and stochastic process governing production of cell cycle activator                                                          | [^1989_matbio_tyson_asymmetric_division_stochastic]                |
+| 1997 | McAdams and Arkin at Stanford propose the first model of "stochastic" gene expression, thinking about delays in activation of circuits if                                                                                                         | [^1997_pronatacasci_mcadams_stochastic_mechanisms]                 |
+|      | expression is noisy. Focus on prokaryotic expression, use SSA. Good untuitive development of Poisson statistics ideas.                                                                                                                            |                                                                    |
+| 2001 | Thattai at MIT uses the SSA to characterize a few simple regulatory systems. Compare simulations to analytical results                                                                                                                            | [^2001_pnas_thattai_intrinsic_noise]                               |
+| 2002 | Swain and others at Rockefeller draw a distinction between intrinsic and extrinsic noise, and report the first formal analysis of expected noise including bursting. This paper also gives the reason for defining                                | [^2002_pnas_swain_intrinsic_extrinsic_contributions]               |
+|      | noise as variance/mean, showing that this definition allows us to simply add up intrinsic and extrinsic noise to get total noise.                                                                                                                 |                                                                    |
+| 2004 | Raser and O'Shea introduce the two color experiments to distinguish intrinsic and extrinsic noise                                                                                                                                                 | [^2004_sci_raser_control_stochasticity_eukaryotic]                 |
+| 2005 | Paulsson reviews the state of art theory. Includes work by Elowitz, van Oudenaarden.                                                                                                                                                              | [^2005_phylifrev_paulsson_stochastic_expression]                   |
+| 2005 | Kussel and Leibler publish theory showing the advantages of stochastic phenotype switching. This puts stochastic gene expression as the basis of bet hedging, a non genetic basis of variation.                                                   | [^2005_sci_kussell_phenotypic_diversity_growth_information]        |
+| 2006 | First global  survey of expression noise, led by Arren Bar-Even which systematically interrogates the origin of noise                                                                                                                             | [^2006_NatGen_Bar-Even_Noise_Protein_Expression_Scales]            |
+| 2007 | So what are the consequences of noise? Di Talia and others at Rockefeller ask if cell cycle time distributions are in agreement with the expected noise in molecular regulators. The style is different, the measurements are not even molecular! | [^2007_DiTalia_Molecular_Noise_Size_Control]                       |
+| 2009 | Taking a significant leap forward, Kar in Tyson's group shows that a stochastic version of mechanistic cell cycle model produces the expected cell cycle timing distributions.                                                                    | [^2009_pronatacasci_kar_noise_cell_cycle]                          |
+| 2013 | Sanchez and Golding show a markedly different global transcriptional noise structure in yeast as compared to bacteria and mammalian cells. Consequences?                                                                                          | [^2013_science_sanchez_genetic_determinants_noisy_gene_expression] |
+| 2015 | Keren sources the origin of the growth rate coupling of noise to the population distributions in G1 and G2. The ploidy ratios are a simple explanation of growth rate dependent noise.                                                            | [^2015_genres_keren_noise_gene_expression_growth_rate]             |
+| 2015 | Metzger in Patricia Wittkopp's group at Michigan shows that noise has consequences at the sequence level, bringing evolution into the picture.                                                                                                    | [^2015_nat_metzger_selection_noise_constrains]                     |
+| 2018 | Duveau studied the consequences for cellular fitness. An important contribution is the experiment design: increasing noise while holding mean expression constant.                                                                                | [^2018_eli_duveau_fitness_effects_noise]                           |
+
 
 
 
