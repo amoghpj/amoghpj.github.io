@@ -63,14 +63,13 @@ $main-width: 75%;
     overflow-y: scroll; /* Disable horizontal scroll */  
     padding-top: 20px;
     // text-align: center;
-    table{
+    table {
         width: $sidebar-width; /* Set the width of the sidebar */
         position: fixed; /* Fixed Sidebar (stay in place on scroll) */
         font-size: 25px;
         font-family: "Sans Serif";
         font-weight: bold;
     }
-}    
     h1 {
         font-family: "Modern";// "Arial";
         font-size: 40px;
