@@ -40,7 +40,7 @@ Two features stand out:
 1.  My sleep schedule is more or less consistent, except for the increased variablity post-defense.
 2.  I moved to Boston in the middle of the pandemic, around week 30. My wake time trend appears to have shifted downwards since the move. The yellow patch marks the weeks when I did an active experiment in waking up early to maximize sunlight hours after daylight savings ended. (Need to get back to that routine!)
 
-![img]({{site.url}}/assets/images/2020-sleep-wake.png)
+![img](/assets/images/2020-sleep-wake.png)
 
 
 <a id="org85b03e0"></a>
@@ -49,7 +49,7 @@ Two features stand out:
 
 Food! A feature of my routine pointed out to me earlier this year is my constant fear of where my next meal is coming from, not in an economic sense but a literal "what do I eat for my next meal" sense.
 I love how my breakfast times have become less variable since my move to Boston, but it is even more amusing to see the mean of my lunch times being nearly flat, even after my schedule shifted to waking up earlier! (I wonder if this is a remnant of my school lunch time?). Finally, I thought I had started eating dinner earlier and earlier, but this plot shows that my dinner times have been very constant at least since the pandemic hit!
-![img]({{site.url}}/assets/images/2020-food.png)
+![img](/assets/images/2020-food.png)
 
 
 <a id="orgb41077d"></a>
@@ -59,7 +59,7 @@ I love how my breakfast times have become less variable since my move to Boston,
 I have dug a reputation for myself for being an amateur coffee snob. I've been tracking the number of cups of coffee I drink. This doesn't necessarily reflect the amount of caffeine intake, because a 'cup' can be either an espresso shot or a tall mocha.
  Interestingly, it looks like I don't drink more than two coffees a day. In fact my mean coffee consumption seems to have dropped from 2 to about 1.5 since the early pandemic. To put that in perspective, that's close to 400 cups of coffee this year. 
 
-![img]({{site.url}}/assets/images/2020-coffee.png)
+![img](/assets/images/2020-coffee.png)
 
 
 <a id="orgd3e5653"></a>
@@ -70,13 +70,13 @@ One happy development during the pandemic was that I started running fairly regu
 
 The trend is really striking. The days I stopped running show an immediate flattening in the weight trend! Also, though the commute to work gets me some fresh air, it unfortunately doesn't seem to be a good replacement to running :(. Good to know&#x2026;
 
-![img]({{site.url}}/assets/images/2020-run-weight-relation.png)
+![img](/assets/images/2020-run-weight-relation.png)
 
 Here are two more trends that I found really interesting. Cumulative number of miles run this year&#x2026;
-![img]({{site.url}}/assets/images/2020-run-weight-relation-run.png)
+![img](/assets/images/2020-run-weight-relation-run.png)
 
 &#x2026; and cumulative number of miles biked since I started tracking my commutes.
-![img]({{site.url}}/assets/images/2020-run-weight-relation-bike.png)
+![img](/assets/images/2020-run-weight-relation-bike.png)
 
 200 miles run this year seems quite impressive to me! I saw on [twitter](https://twitter.com/RodalLab/status/1341841058456584192?s=20) that one challenge is to run a 1000 miles in a year. While that seems out of reach right now, I'd definitely like to try and hit 500 miles in 2021!
 
@@ -89,33 +89,12 @@ I don't actively journal every day. I have tried, and on the few times I sit dow
 
 The goal is to get a crude estimate of productivity. The two trends below correspond to two "date trees" in the two distinct org files that I maintain, one a lab notebook and the other a personal "diary" file. The spike in September aside (when I refiled a bunch of expired TODO items), I am moderately satisfied with the state of my note taking right now. An average day at work seems to have between 2 and 5 entries. One goal of mine is to get better at estimating effort, which should be more straight forward now that I am getting used to doing experiments in the lab.
 
-![img]({{site.url}}/assets/images/2020-entries.png)
+![img](/assets/images/2020-entries.png)
 
 Another, indirect measure of productivity is how much I explored the literature. Here is a time line of the entries I added to my global references.bib file. Unsurpirsingly, reading and note taking for scienfitic literature took a hit in the pandemic. Need to get those numbers up next year!
 
-    import bibtexparser
-    from datetime import datetime
-    import sys
-    import matplotlib.pyplot as plt
-    
-    with open('/home/jalihal/jalihal_projects/Research/references.bib','r') as bibtex_file:
-        bib_database = bibtexparser.load(bibtex_file)
-    dates = []  
-    for b in bib_database.entries:
-        if 'date_added' in b.keys():
-            d = datetime.strptime(b['date_added'], "%a %b %d %H:%M:%S %Y")
-            dates.append(d)
-    new = [d for d in dates if d.year >=2020]
-    old = [d for d in dates if d.year < 2020]
-    plt.hist(new, bins=50, label = 'This year')
-    plt.hist(old, bins=100, label = 'Previous years')
-    plt.ylabel('# bib entries added')
-    plt.xticks(rotation=45)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig('{{site.url}}/assets/images/2020-references.png')
 
-![img]({{site.url}}/assets/images/2020-references.png)
+![img](/assets/images/2020-references.png)
 
 
 <a id="org099ed67"></a>
@@ -124,11 +103,11 @@ Another, indirect measure of productivity is how much I explored the literature.
 
 Finally, a series of tools have popped up in recent years that (re?) implement notions of an "external brain", a customizable personal wiki, or knowledge repository that can help augment our traversal through information landscapes on the internet. Some of them, with orgmode interfaces include [org-zettlekasten](https://github.com/l3kn/org-zettelkasten), [org-roam](https://github.com/org-roam/org-roam), and [org-brain](https://github.com/Kungsgeten/org-brain). I played around with org-brain about two years, forgot about it for a period, and then started using it rigorously last year. Below is a summary of the number of entries I've made over the last two years. I'm happy with my readings over the pandemic! 
 
-![img]({{site.url}}/assets/images/2020-org-brain.png)
+![img](/assets/images/2020-org-brain.png)
 
 A goal for next year is to get an export of my org-brain to play nicely with the rest of my website. In the mean time, enjoy a snapshot of my org-brain! (Click on the image to see the whole thing.)
 
-![img]({{site.url}}/assets/images/2020-brain-full.png)
+![img](/assets/images/2020-brain-full.png)
 
 
 <a id="orgfa858ba"></a>
