@@ -14,7 +14,7 @@ blog: true
 
 # Background
 
-Over the last few years, I have chanced upon diverse use cases which harness the customizable, extensible API that [orgmode](http://www.orgmode.org) provides to your digital presence. Two of these use cases that have fascinated me have been quantified self <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>, a philosophy that encourages *n=1* experiments to induce self awareness, and personal information/knowledge management (PIM/PKM) projects <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. Inspired by the former I have been using a series of [org capture templates](https://orgmode.org/manual/Capture.html) (an outdated version of my templates can be found [here under Capture Templates](https://github.com/amoghpj/emacs_config/blob/master/config.org)) I have been trying to systematically record  my daily habits and some workout statistics. The latter set of ideas is more diffuse, with no end goal other than curating "interesting" content and categorizing them in an easily searchable set of notes from online encounters. For this I have been using [org-brain](https://github.com/Kungsgeten/org-brain) for a few years now, with a continuously evolving file structure. But more importantly, I maintain a personal `diary.org` for non work related daily documentation, and a `labnotebook.org` which serves as my digital lab notebook. In this blog post I'll use a python API to org mode to chart out my year in quanrantine.
+Over the last few years, I have found some very interesting applications of [orgmode's](http://www.orgmode.org) customizable, extensible API, to better define my digital presence: implementations of 'quantified self' <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>, a philosophy that encourages *n=1* experiments to induce self awareness, and personal information/knowledge management (PIM/PKM) <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. Inspired by the former I have been using a series of [org capture templates](https://orgmode.org/manual/Capture.html) (an outdated version of my templates can be found [here under Capture Templates](https://github.com/amoghpj/emacs_config/blob/master/config.org)) I have been recording my daily habits and workout statistics. The latter set of ideas is more diffuse, with no end goal other than curating "interesting" content and categorizing them in an easily searchable set of notes from online encounters. For this I have been using [org-brain](https://github.com/Kungsgeten/org-brain) for a few years now, with a continuously evolving file structure. But more importantly, I maintain a personal `diary.org` for non work related daily documentation, and a `labnotebook.org` which serves as my digital lab notebook. In this post I've used a python API to org mode to chart out my year in quanrantine.
 
 
 <a id="orgbf796ad"></a>
@@ -33,7 +33,13 @@ Spoiler alert: the first question is very hard to answer. The second is easier b
 
 ## Sleep-wake times
 
-I started doing this experiment in the beginning of the year, but quickly fell off at the end of January. The y-axis below is on a 24-hour clock. There are three vertical dashed lines corresponding to three major shifts in lifestyle this year: red corresponds to start of quarantine in Virginia, the 15th of March, black the day I defended my thesis, and green is approximately the week that I started going in to work every day to do experiments at my postdoc position. The blue trend captures the weekly mean of the daily data shown in gray.
+I started doing this experiment in the beginning of the year, but quickly fell off at the end of January. The y-axis below is on a 24-hour clock. There are three vertical dashed lines corresponding to three major shifts in lifestyle this year: 
+
+1. red corresponds to start of quarantine in Virginia, the 15th of March, 
+2. black the day I defended my thesis, and 
+3. green is approximately the week that I started going in to work every day to do experiments at my postdoc position. 
+
+The blue trend captures the weekly mean of the daily data shown in gray.
 
 Two features stand out:
 
