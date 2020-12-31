@@ -11,7 +11,7 @@ Org-mode allows for the creation of quick summaries across a subtree of using [c
 
 I've found that in my experience, it is more natural for me to create an org-table to start summarizing a series of experiments. I fill these tables manually, adding new columns when needed. I've been looking for ways to quickly interact with such data-rich tables to rapidly generate "views" of each row, like mini reports for my-eyes-only. This morning I hacked together some functions that help me build a custom dashboard to good effect, and I thought I'd share this experiment.
 
-Below is a screenshot of a table with 9 columns that I have been building over the last two months. Each row corresponds to an experiment and information related to it. (I've had to zoom out pretty far to get the entire table to fit in one screen!) As you can see, the table is already getting long, and needs some way of summarizing a single row meaningfully. 
+Below is a screenshot of a table with 9 columns that I have been building over the last two months. Each row corresponds to an experiment and information related to it. (I've had to zoom out pretty far to get the entire table to fit in one screen!) As you can see, the table is already getting long, and needs some way of summarizing a single row meaningfully. The column on the right contains paths to figures.
 
 ![img](/assets/images/2020-12-31-org-table.png)
 
@@ -22,8 +22,7 @@ Below is a screenshot of a table with 9 columns that I have been building over t
 <source src="/assets/videos/2020-12-31-custom-org-table-demo.mp4" type="video/mp4">
 </video>
 
-
-# Thoughts on working with org-tables
+# Going from an org-table to a prettified org buffer
 
 This is the function I ended up writing. I heavily rely on `completing-read` to generate a controlled vocabulary of options from a predefined list. 
 
