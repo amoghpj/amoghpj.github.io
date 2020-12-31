@@ -18,7 +18,7 @@ Below is a screenshot of a table with 9 columns that I have been building over t
 ... and this is how I summarize a single row:
 
 
-<video autoplay controls >
+<video controls >
 <source src="/assets/videos/2020-12-31-custom-org-table-demo.mp4" type="video/mp4">
 </video>
 
