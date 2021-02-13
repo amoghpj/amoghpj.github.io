@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `5 September 2020`
+Last updated on `13 February 2021`
 
 # Books
 
@@ -16,6 +16,8 @@ Last updated on `5 September 2020`
 - The Art and Politics of Science - *Harold Varmus*
 - On Human Nature - *E.O. Wilson*
 - Among The Believers - *V. S. Naipaul*
+- A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane - *Samanth Subramanian*
+- The Opium Wars - *W. Travis Hanes III and Frank Sanello*
 
 **Fiction**
 
