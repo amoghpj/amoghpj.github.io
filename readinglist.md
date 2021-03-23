@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `13 February 2021`
+Last updated on `24 March 2021`
 
 # Books
 
@@ -47,3 +47,4 @@ Last updated on `13 February 2021`
 - [The Salvation of Doug, and The Demise of Bill](http://www2.biology.ualberta.ca/locke.hp/dougandbill.htm) - *William Sullivan, Douglas Kellogg*
 - [What Nihilism is not](https://thereader.mitpress.mit.edu/what-nihilism-is-not/) - *Nolen Gertz, from* Nihilism
 - A Tract Against the Prevailing System of Hindoo Idolatory - *Raja Rammohun Roy, 1820*
+- [The unreasonable effectiveness of mathematics in the natural sciences](http://www.maths.ed.ac.uk/~aar/papers/wigner.pdf) - *Eugene Wigner*
