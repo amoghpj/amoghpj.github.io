@@ -4,7 +4,7 @@ title: About
 ---
 
 
-![Profile Image]({{site.url}}/assets/images/me.jpeg)
+![Profile Image](/assets/images/me.jpeg)
 
 Hi! I am Amogh Jalihal and I am a postdoctoral researcher at [Harvard Medical School](https://hms.harvard.edu/), 
 working with [Prof. Michael Springer's](https://springerlab.org/) group. I have a PhD from the [Genetics, Bioinformatics, and
