@@ -13,7 +13,7 @@ projects: true
 As a requirement for Computing the Brain, a course I took in Fall
 2016, I presented the Lu et al, 2016 paper on resynchronization in the
 context of jetlag. To try and understand the basis for their model of
-jetlag, I tried simulating the Kuramoto model myself. [Here](/assets/python-scripts/KuramotoSimulation_PyDSTool.py) is a
+jetlag, I tried simulating the Kuramoto model myself. [Here](/assets/files/KuramotoSimulation_PyDSTool.py) is a
 code to generate a simulation of the Kuramoto model, which outputs
 something like this:
 
