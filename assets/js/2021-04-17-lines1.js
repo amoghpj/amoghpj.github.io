@@ -18,8 +18,15 @@ var dir =[];
 
 var clicked = true;
 function setup() {
-    WIDTH=windowWidth/1.5;
-    HEIGHT=windowHeight/1.5;
+    if (windowHeight/windowWidth > 1.){
+        WIDTH=windowWidth/1.5;
+        HEIGHT=WIDTH;
+    }
+    else{
+        HEIGHT = windowHeight/1.5;
+        WIDTH = HEIGHT;
+    }
+
     frameRate(50);
     const canvas = createCanvas(WIDTH, HEIGHT);
     canvas.parent("2021-04-17-sketch")
