@@ -106,7 +106,7 @@ if __name__ == "__main__":
 # Step 4 - Start flask server 
 At this point, running `python capturebot.py` will start the bot locally. In order for Slack to communicate with this local Flask server, I used `ngrok`. So simply (download the setup the ngrok binaries and) run `ngrok http 3000`. Finally, copy this ngrok URL and paste it into `Features > Event Subscriptions : Request URL` on the app dashboard.
 
-![](./assets/images/screenshot_20210510_001010.png)
+![img](/assets/images/screenshot_20210510_001010.png)
 
 # Caveats 
 1. The capture template that you invoke will have to be non interactive. So this method is mostly useful for adding todos, and capturing links. I'd appreciate links to creative uses of org-protocol.
