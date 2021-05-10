@@ -12,16 +12,18 @@ One of the problems of my quantified self workflow is how I should capture times
 What you will need to follow these instructions:
 1. Access to a slack channel where you can experiment. I just made a free workspace for myself.
 2. Python3
-3. ngrok - ![](https://ngrok.com/)
+3. ngrok - ![from their website](https://ngrok.com/)
 
 # Step 1 - Make a new slackbot on the Slack developer interface
-Login to slack, and `Create A New App` on ![](https://api.slack.com/apps). I am not going to outline all the steps here because honestly, I mucked around with the settings myself. But you can follow the instructions [on these pages](https://api.slack.com/start/overview).
+Login to slack, and [Create A New App](https://api.slack.com/apps). I am not going to outline all the steps here because honestly, I mucked around with the settings myself. But you can follow the instructions [on these pages](https://api.slack.com/start/overview).
 
 The hardest part of understanding the API infrastructure for me was to wrap my head around [scopes](https://api.slack.com/tutorials/understanding-oauth-scopes-bot) and [events](https://api.slack.com/apis/connections/events-api). In my understanding, the former limits the permissions of what the bot has access to in Slack, and the latter defines what types of events the bot should listen for.
 
 Once you create an app and follow the instructions on how to install it I got the keys I needed from here:
-1. `Settings > Install App : Bot User OAuth Token`. I've stored this key in my `.bashrc` as `export SLACK_BOT_TOKEN="xoxb-XXXX`
-2. `Settings > Basic Information : Signing Secret`, which I've stored as `export SLACK_SIGNING_SECRET="XXX`
+1. `Settings > Install App : Bot User OAuth Token`. 
+   I've stored this key in my `.bashrc` as `export SLACK_BOT_TOKEN="xoxb-XXXX`
+2. `Settings > Basic Information : Signing Secret`, 
+   which I've stored as `export SLACK_SIGNING_SECRET="XXX`
 
 
 I called my app the `capture-bot`, and named the bot in the workspace `capture`.
