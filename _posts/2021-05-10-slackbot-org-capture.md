@@ -12,7 +12,7 @@ One of the problems of my quantified self workflow is how I should capture times
 What you will need to follow these instructions:
 1. Access to a slack channel where you can experiment. I just made a free workspace for myself.
 2. Python3
-3. ngrok - ![from their website](https://ngrok.com/)
+3. ngrok - [from their website](https://ngrok.com/)
 
 # Step 1 - Make a new slackbot on the Slack developer interface
 Login to slack, and [Create A New App](https://api.slack.com/apps). I am not going to outline all the steps here because honestly, I mucked around with the settings myself. But you can follow the instructions [on these pages](https://api.slack.com/start/overview).
