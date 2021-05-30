@@ -1,5 +1,5 @@
 ---
-title: "Saba Mahmood's Religion in a Secular Age"
+title: "Saba Mahmood's Religious difference in a Secular Age"
 layout: post
 description: Notes, ideas and quotations from the book
 tag:

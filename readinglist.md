@@ -18,7 +18,7 @@ Last updated on `24 March 2021`
 - Among The Believers - *V. S. Naipaul*
 - A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane - *Samanth Subramanian*
 - The Opium Wars - *W. Travis Hanes III and Frank Sanello*
-
+- Religious Difference in a Secular Age - *Saba Mahmood*
 **Fiction**
 
 - The Dark Forest Trilogy -  *Liu Cixin*
