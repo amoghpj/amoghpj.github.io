@@ -70,4 +70,4 @@ One final observation: Roy at one point argues for the mentions the *roles* that
 
 This short book is a fascinating look into Roy's work. There are glimpses of his anti-Sati stance in this book, and also anti-Christian stances when it comes to idol worship (He mentions the Protuguese here). According to Hay, this tract marked the end of Roy's anti-Hindu writings, after which he focussed on engaging with the Christian missionaries directly. I would like to read more of his correspondences with missionaries, and also the responses to this Tract. (Hay mentions one Sastri from Madras wrote a scathing rebuttal which I am very curious about).
 
-[^related]: This was also where I found  [Wilson's On Human Nature]({{site.url}}/2020/08/23/on-human-nature.html)
+[^related]: This was also where I found  [Wilson's On Human Nature](/2020/08/23/on-human-nature.html)
