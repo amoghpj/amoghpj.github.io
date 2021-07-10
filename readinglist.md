@@ -2,24 +2,27 @@
 layout: default
 title: Reading list
 ---
-Last updated on `24 March 2021`
+Last updated on `10 July 2021`
 
 # Books
 
 **Non fiction**
 
-- Reconceptualizing India Studies - *S. N. Balagangadhara*
-- Do all roads lead to Jerusalem? - *S. N. Balagangadhara*
-- As Others See Us - *S. N. Balagangadhara, Divya Jhingran*
-- Chance and Necessity - *Jacques Monod*
-- Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
-- The Art and Politics of Science - *Harold Varmus*
-- On Human Nature - *E.O. Wilson*
-- Among The Believers - *V. S. Naipaul*
-- A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane - *Samanth Subramanian*
-- The Opium Wars - *W. Travis Hanes III and Frank Sanello*
-- Religious Difference in a Secular Age - *Saba Mahmood*
-
+- 2021
+  - [A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane](https://www.amazon.com/Dominant-Character-Radical-Restless-Politics/dp/0393634248/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=) - *Samanth Subramanian*
+  - The Opium Wars - *W. Travis Hanes III and Frank Sanello*
+  - [Religious Difference in a Secular Age](https://anthropology.berkeley.edu/religious-difference-secular-age-minority-report) - *Saba Mahmood*
+  - [Smut: Erotic Reality/Obscene Ideology](https://www.amazon.com/dp/B01E71R4HE/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) - *Murray Davis*
+- 2020
+  - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
+  - The Art and Politics of Science - *Harold Varmus*
+  - On Human Nature - *E.O. Wilson*
+  - Among The Believers - *V. S. Naipaul*
+- 2019
+  - Reconceptualizing India Studies - *S. N. Balagangadhara*
+  - Do all roads lead to Jerusalem? - *S. N. Balagangadhara*
+  - As Others See Us - *S. N. Balagangadhara, Divya Jhingran*
+  - Chance and Necessity - *Jacques Monod*
 
 **Fiction**
 
