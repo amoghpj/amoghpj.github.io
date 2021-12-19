@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `10 July 2021`
+Last updated on `18 December 2021`
 
 # Books
 
@@ -14,6 +14,7 @@ Last updated on `10 July 2021`
   - [Religious Difference in a Secular Age](https://anthropology.berkeley.edu/religious-difference-secular-age-minority-report) - *Saba Mahmood*
   - [Smut: Erotic Reality/Obscene Ideology](https://www.amazon.com/dp/B01E71R4HE/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) - *Murray Davis*
   - [Projections](https://amoghpj.github.io/2021/08/16/projections) - *Karl Deisseroth*
+  - [India that is Bharat](https://www.bloomsbury.com/us/india-that-is-bharat-9789354352508/) - *J. Sai Deepak"
 - 2020
   - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
   - The Art and Politics of Science - *Harold Varmus*
