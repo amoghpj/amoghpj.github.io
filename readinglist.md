@@ -9,12 +9,13 @@ Last updated on `18 December 2021`
 **Non fiction**
 
 - 2021
-  - [A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane](https://www.amazon.com/Dominant-Character-Radical-Restless-Politics/dp/0393634248/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=) - *Samanth Subramanian*
-  - The Opium Wars - *W. Travis Hanes III and Frank Sanello*
+  - [A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane](https://www.amazon.com/Dominant-Character-Radical-Restless-Politics/dp/0393634248/) - *Samanth Subramanian*
+  - [The Opium Wars](https://www.amazon.in/Opium-Wars-Politics-Economics-Addiction/dp/1570719314/) - *W. Travis Hanes III and Frank Sanello*
   - [Religious Difference in a Secular Age](https://anthropology.berkeley.edu/religious-difference-secular-age-minority-report) - *Saba Mahmood*
   - [Smut: Erotic Reality/Obscene Ideology](https://www.amazon.com/dp/B01E71R4HE/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) - *Murray Davis*
   - [Projections](https://amoghpj.github.io/2021/08/16/projections) - *Karl Deisseroth*
-  - [India that is Bharat](https://www.bloomsbury.com/us/india-that-is-bharat-9789354352508/) - *J. Sai Deepak"
+  - [India that is Bharat](https://www.bloomsbury.com/us/india-that-is-bharat-9789354352508/) - *J. Sai Deepak*
+  - [Savarkar: Echoes from a forgotten past, 1883 - 1924](https://www.amazon.in/Savarkar-Echoes-Forgotten-Past-1883-1924/dp/0670090301) - *Vikram Sampath* 
 - 2020
   - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
   - The Art and Politics of Science - *Harold Varmus*
