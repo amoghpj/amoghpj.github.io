@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `18 December 2021`
+Last updated on `31 December 2021`
 
 # Books
 
