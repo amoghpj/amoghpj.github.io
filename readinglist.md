@@ -4,6 +4,13 @@ title: Reading list
 ---
 Last updated on `31 December 2021`
 
+# Currently reading
+
+- The WEIRDest People in the world - Joseph Henrich
+- Evolutionary Causation
+- Trans: When Ideology meets Reality - Helen Joyce
+- Orientalism - Edward Said
+
 # Books
 
 **Non fiction**
