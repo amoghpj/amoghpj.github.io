@@ -9,6 +9,6 @@
 - name: Reading List
   link: /readinglist.html      
 - name: Journal Roundup
-  link: /journalroundup.html      
+  link: /_posts/journalroundup.html      
 - name: Resume
   link: /assets/cv/jalihal_cv.pdf

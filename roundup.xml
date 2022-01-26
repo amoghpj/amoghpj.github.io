@@ -6,11 +6,16 @@ layout: none
 	<channel>
 		<title>{{ site.name | xml_escape }}</title>
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
+		{% for post in site.posts limit:1000 %}
+        {% if post.title contains 'Weekly journal roundup' %}
 		<link></link>
 		<atom:link href="/roundup.xml" rel="self" type="application/rss+xml" />
-		<title>{{ journalroundup.title | xml_escape }}</title>
-		<description>{{ journalroundup.content | xml_escape }}</description>
-		<link>{{ journalroundup.url }}</link>
-		<guid isPermaLink="true">{{ journalroundup.url }}</guid>
+		<title>{{ post.title | xml_escape }}</title>
+		<description>{{ post.content | xml_escape }}</description>
+		<link>{{ post.url }}</link>
+		<guid isPermaLink="true">{{ post.url }}</guid>
+        {% endif %}
+		{% endfor %}
+
 	</channel>
 </rss>
