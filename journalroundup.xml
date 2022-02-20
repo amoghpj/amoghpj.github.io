@@ -6,7 +6,7 @@
 		<title>{{ site.name | xml_escape }}</title>
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
 		<atom:link href="/journalroundup.xml" rel="self" type="application/rss+xml" />
-        {% for post in site.journalroundup %}
+        {% for post in site.journalroundup reversed %}
         <title> {{ post.title  }}  </title>        
         {{ post.content  }} 
         {% endfor %}
