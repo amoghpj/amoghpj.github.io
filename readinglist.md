@@ -2,18 +2,21 @@
 layout: default
 title: Reading list
 ---
-Last updated on `31 December 2021`
+Last updated on `10 August 2022`
 
 # Currently reading
 
 - The WEIRDest People in the world - Joseph Henrich
 - Evolutionary Causation
 - Trans: When Ideology meets Reality - Helen Joyce
+
 - Orientalism - Edward Said
 
 # Books
 
 **Non fiction**
+- 2022
+  - Which of us are Aryans? Rethinking the concept of our origins - *Romila Thapar, Michael Witzel, Jaya Menon, Kai Friese, Razib Khan*
 
 - 2021
   - [A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane](https://www.amazon.com/Dominant-Character-Radical-Restless-Politics/dp/0393634248/) - *Samanth Subramanian*
@@ -23,11 +26,13 @@ Last updated on `31 December 2021`
   - [Projections](https://amoghpj.github.io/2021/08/16/projections) - *Karl Deisseroth*
   - [India that is Bharat](https://www.bloomsbury.com/us/india-that-is-bharat-9789354352508/) - *J. Sai Deepak*
   - [Savarkar: Echoes from a forgotten past, 1883 - 1924](https://www.amazon.in/Savarkar-Echoes-Forgotten-Past-1883-1924/dp/0670090301) - *Vikram Sampath* 
+  
 - 2020
   - Cybernetics: Or Control and Communication in the Animal and the Machine - *Norbert Wiener*
   - The Art and Politics of Science - *Harold Varmus*
   - On Human Nature - *E.O. Wilson*
   - Among The Believers - *V. S. Naipaul*
+  
 - 2019
   - Reconceptualizing India Studies - *S. N. Balagangadhara*
   - Do all roads lead to Jerusalem? - *S. N. Balagangadhara*
