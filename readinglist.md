@@ -4,12 +4,17 @@ title: Reading list
 ---
 Last updated on `10 August 2022`
 
+# On my shelf (things that I want to start reading soon!)
+
+- Veer Savarkar - A contested legacy - Vikram Sampath
+- The materiality of the past - History and representation in Sikh tradition - Anne Murphy
+
 # Currently reading
 
 - The WEIRDest People in the world - Joseph Henrich
 - Evolutionary Causation
 - Trans: When Ideology meets Reality - Helen Joyce
-
+- The Mathematics of the Gods and the Algorithms of Men
 - Orientalism - Edward Said
 
 # Books
