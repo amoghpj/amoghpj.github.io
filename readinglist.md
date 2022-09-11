@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `10 August 2022`
+Last updated on `11 September 2022`
 
 # On my shelf (things that I want to start reading soon!)
 
@@ -14,7 +14,6 @@ Last updated on `10 August 2022`
 - The WEIRDest People in the world - Joseph Henrich
 - Evolutionary Causation
 - Trans: When Ideology meets Reality - Helen Joyce
-- The Mathematics of the Gods and the Algorithms of Men
 - Orientalism - Edward Said
 
 # Books
@@ -22,6 +21,7 @@ Last updated on `10 August 2022`
 **Non fiction**
 - 2022
   - Which of us are Aryans? Rethinking the concept of our origins - *Romila Thapar, Michael Witzel, Jaya Menon, Kai Friese, Razib Khan*
+  - The Mathematics of Gods and the Algorithms of Men - *Paolo Zellini*
 
 - 2021
   - [A Dominant Character: The Radical Science and Restless Politics of J. B. S. Haldane](https://www.amazon.com/Dominant-Character-Radical-Restless-Politics/dp/0393634248/) - *Samanth Subramanian*
