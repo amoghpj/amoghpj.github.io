@@ -5,3 +5,9 @@ _site
 Gemfile.lock
 _posts/*.org
 .projectile
+*.bbl
+*.bcf
+*.out
+*.blg
+*.aux
+*.log
