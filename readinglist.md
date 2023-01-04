@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `11 September 2022`
+Last updated on `03 January 2023`
 
 # On my shelf (things that I want to start reading soon!)
 
@@ -12,6 +12,8 @@ Last updated on `11 September 2022`
 # Currently reading
 
 - The WEIRDest People in the world - Joseph Henrich
+- The Problem With Democracy - Shadi Hamid
+- The Doctrine of Vibration - Mark Dyczkowski
 - Evolutionary Causation
 - Trans: When Ideology meets Reality - Helen Joyce
 - Orientalism - Edward Said
