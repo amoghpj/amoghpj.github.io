@@ -19,9 +19,8 @@ Last updated on `11 September 2022`
 # Books
 
 **Non fiction**
-- 2022
+- 2023
   - [The Sphota Theory of Language](https://www.amazon.com/gp/product/8120801814/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - *Harold G. Coward*
-
 
 - 2022
   - Which of us are Aryans? Rethinking the concept of our origins - *Romila Thapar, Michael Witzel, Jaya Menon, Kai Friese, Razib Khan*
