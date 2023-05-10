@@ -69,7 +69,7 @@ So I decided to calculate the $$\text{lim}_{\text{bolus}\rightarrow 0} V_{\text{
 
 $$\text{lim}_{\text{bolus}\rightarrow 0} \text{bolus} \frac{\log(endOD/startOD)}{\log(V/(V + \text{bolus}))}$$
 
-I'd forgotten how to solve this limit when things were going to zero in the numerator and denominator. [Sushrut Karmalkar](https://sushrutk.github.io/) reminded my to apply the l'Hopital's rule and differentiate the two parts
+I'd forgotten how to solve this limit when things were going to zero in the numerator and denominator. [Sushrut Karmalkar](https://sushrutk.github.io/) reminded me to apply  l'Hopital's rule and differentiate the two parts
 
 Numerator: $$\frac{d}{d \text{bolus}}\text{bolus} \log(endOD/startOD) = \log(endOD/startOD)$$
 
@@ -83,7 +83,7 @@ This was pretty cool! So over a 100X dilution for a volume of 22mL, I'd only nee
 
 **What did I just read**
 
-I've been scratching my head about this one for a few days now.  This seems to be a general result in fractional dilution systems. I immediately thought of fractional killing in chemotherapy, or  multiple doses of antibiotics.  The intuition for these systems is always that we are killing off a fixed fraction of cancer cells/pathogens at each dose.  But the result about indicates that repeated doses allows for a reduction of the total amount of therapeutic used as well! This is pretty cool.
+I've been scratching my head about this one for a few days now.  This seems to be a general result in fractional dilution systems. I immediately thought of fractional killing in chemotherapy, or  multiple doses of antibiotics.  The intuition for these systems is always that we are killing off a fixed fraction of cancer cells/pathogens at each dose.  But the result above indicates that repeated doses allows for a reduction of the total amount of therapeutic used as well! This is pretty cool.
 
 I looked around briefly for other domains where this law comes up.  The only other thing I've been able to find is what is called the [Basic Room Purge Equation](https://en.wikipedia.org/wiki/Dilution_(equation)) which states that in order to reduce the concentration of a particular gas say carbon monoxide in a room, the time required at a flow rate of clean air Q in a room of volume V is 
 
