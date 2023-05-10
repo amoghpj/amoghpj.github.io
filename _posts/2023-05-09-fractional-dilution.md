@@ -19,7 +19,7 @@ _**The Proposal**_
 
 If I dispense a fixed bolus of media and record the sensor readings, I'll be able to construct a calibration curve. Here is an example of the outcome of this calibration, with the red dots being the sensor readings at each dilution curve, and the colored dots representing the timecourse, with bright colors representing later times.
 
-![An example of a successful calibration, the axes show the sensor readings, and the red points show readings at discrete dilution events](/assets/images/screenshot_20230509.png){:width="10%"}
+![Left: An illustration of the fractional dilution scheme with repeated additions of a fixed bolus of media to a dense culture. Right: An example of a successful calibration, the axes show the sensor readings, and the red points show readings at discrete dilution events](/assets/images/fractional-dilution-illustration.png){:width="10%"}
 
 
 _**The Problem**_
