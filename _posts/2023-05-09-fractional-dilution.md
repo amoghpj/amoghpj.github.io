@@ -13,7 +13,7 @@ I've been working on extending the capabilities of the [eVOLVER](https://www.fyn
 ![Figure 2 from Wong et al 2018, Nature Biotech. They don't in fact measure OD600 as this figure would have you believe.](/assets/images/41587_2018_Article_BFnbt4151_Fig2_HTML.webp)
 
 
-While attempting to improve the quality of [OD measurements](https://en.wikipedia.org/wiki/OD600), we recognized that the main source of noise in these measurements came from the glass vial itself.   One solution to this problem is to redo an OD calibration in the glass vial directly.  I propose to do this by starting with a dense culture, and sequentially adding a fixed bolus of media until we span the OD range that we are interested in.  This calibration data can then be used as a high quality data set from which we can interpolate real ODs. 
+While attempting to improve the quality of [OD measurements](https://en.wikipedia.org/wiki/OD600), we recognized that the main source of noise in these measurements came from the glass vial itself.   One solution to this problem is to redo an OD calibration in the glass vial directly.  I propose to do this by starting with a dense culture, and sequentially adding a fixed bolus of media until we span the OD range that we are interested in.  By recording the sensor values (there are two sensors that record the scattering of 900nm light through the culture) at each dilution step, we can use this calibration data to then infer real ODs during an experiment.
 
 _**The Proposal**_
 
