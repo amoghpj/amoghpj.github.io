@@ -24,11 +24,10 @@ I use this system even for theory/modeling, bioinformatics, and general data ana
   drwxrwxr-x   3 jalihal jalihal  4096 Aug 30 11:16 2023-08-30-nf11-lb-timecourse
   drwxrwxr-x   3 jalihal jalihal  4096 Aug 22 22:47 2023-07-07-xa31-environmental-samples
   drwxr-xr-x   3 jalihal jalihal  4096 Aug  3 18:14 2022-10-11-ts138
-  drwxrwxr-x   2 jalihal jalihal  4096 Jul 17 14:39 2023_06_26_xa27
   drwxrwxr-x   2 jalihal jalihal  4096 Jul 17 14:14 2023-07-10-xa32-biofilm-growth
   drwxrwxr-x   3 jalihal jalihal  4096 Jul 17 08:48 2023-07-06-xa26
-  drwxrwxr-x   3 jalihal jalihal  4096 Jul 13 18:03 2023_06_28_nf6b
 ```
+Here, `am3` is the third experiment/analysis I've performed for the project `am`.  The directory name further records the time stamp of the start of this experiment/analysis, and optionally some keywords to help understand what this was about.
 
 I need to typically access the folders of roughly the past month at any given point in time, around 15 folders give or take.  The important thing is that I now remember the experiment IDs of these recent experiments, so it is easier to now access them in `dired` by filtering for the the ID itself.  For some time now, I've wished for a way to jump directly to the experiment folder from any arbitrary location in emacs.  The following function does exactly this. (`analysispath` contains the path to the directory containing the folders shown above)
 
