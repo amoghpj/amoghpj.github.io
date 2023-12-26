@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `23 February 2023`
+Last updated on `26 December 2023`
 
 # On my shelf (things that I want to start reading soon!)
 
@@ -23,9 +23,10 @@ Last updated on `23 February 2023`
 - 2023
   - [The Sphota Theory of Language](https://www.amazon.com/gp/product/8120801814/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - *Harold G. Coward*
   - [The Problem With Democracy](https://www.brookings.edu/books/the-problem-of-democracy-america-the-middle-east-and-the-rise-and-fall-of-an-idea/) - *Shadi Hamid* ([notes](https://amoghpj.github.io/2023/02/23/the-problem-with-democracy.html) )
-- 'Yogini'in South Asia - Interdisciplinary approaches - Istvan Keul
-- Eichmann in Jerusalem - Hannah Arendt
-- Evolutionary Causation
+  - 'Yogini' in South Asia - Interdisciplinary approaches - Istvan Keul
+  - [Evolutionary Causation](https://mitpress.mit.edu/9780262039925/evolutionary-causation/) - Tobias Uller and Kevin Lala
+  - Eichmann in Jerusalem - Hannah Arendt ([notes](http://amoghpj.github.io/2023/12/26/eichmann.html))
+
 
 - 2022
   - Which of us are Aryans? Rethinking the concept of our origins - *Romila Thapar, Michael Witzel, Jaya Menon, Kai Friese, Razib Khan*
