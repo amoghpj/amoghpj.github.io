@@ -20,6 +20,7 @@ Last updated on `26 December 2023`
 # Books
 
 **Non fiction**
+
 - 2023
   - [The Sphota Theory of Language](https://www.amazon.com/gp/product/8120801814/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - *Harold G. Coward*
   - [The Problem With Democracy](https://www.brookings.edu/books/the-problem-of-democracy-america-the-middle-east-and-the-rise-and-fall-of-an-idea/) - *Shadi Hamid* ([notes](https://amoghpj.github.io/2023/02/23/the-problem-with-democracy.html) )
