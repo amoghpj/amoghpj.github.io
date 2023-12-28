@@ -76,17 +76,21 @@ Claude Shannon's work on information theory allows us to pose questions like the
 
 The Shannon Entropy can be thought of how surprising a given event is. We can thus pose the question, how long must an oligonucleotide sequence be such that it is surprising to find it in the genome?
 
-Shannon Entropy is mathematically defined as $$H_x = p(x) \log(p(x))$$ where p(x) is the probability of occurence of event x. I am interested in calculating the surprise of occurence of an *n* length oligomer, which is the sum of entropies of all possible nucleotides at a given position.
+Shannon Entropy is mathematically defined as $$H_x =- p(x) \log(p(x))$$ where p(x) is the probability of occurence of event x. I interpret Shannon Entropy as a measure of surprise, where a rare, low probability event ends up with a large Shannon Entropy. 
 
-$$H_n = \Sigma_{i=1}^{n} \Sigma_{b \in \text{ATGC}} p(b) \log(p(b)) = n 4 p(b) \log(b) = n \log(b)$$
+__I am interested in calculating the surprise of occurence of an *n* length oligomer, which is the sum of entropies of all possible nucleotides at a given position.__
+
+$$H_n =- \Sigma_{i=1}^{n} \Sigma_{b \in \text{ATGC}} p(b) \log(p(b)) = - n (4 p(b) \log(p(b))) = n \log(1/p(b))$$
+
+*(Note: I have cancelled out the 4\*p(b) above in this case because p(b)=1/4)*
 
 On the other hand, I want to compare this surprise to the random occurence of any length *n* oligo across the genome. Because of assumption (1) above, any random oligo of any length has an equal chance of occuring anywhere in the genome. For a genome of length N, p(occurence) = 1/N. I denote this with p(o). I now add up the entropies for each position.  Here again, I assume that n<< N, so I don't have to be too careful with the summation bounds. 
 
-$$H_o = \Sigma_{i=1}^{N} p(o) \log(p(o)) = N p(o) \log(p(o)) = N/N \log(1/N)$$
+$$H_o = -\Sigma_{i=1}^{N} p(o) \log(p(o)) = -N p(o) \log(p(o)) = -N/N \log(1/N) = \log(N)$$
 
 Finally, when does $$H_n \geq H_o$$ i.e., the surprise of seeing a random sequence of oligonucleotides exceed the surprise of finding it in the genome?
 
-i.e. $$n \log(p(b)) \geq \log(1/N) \implies n \geq -\log(N)/\log(p(b))$$
+i.e. $$n \log(1/p(b)) \geq \log(N) \implies n \geq -\log(N)/\log(p(b))$$
 
 This is the same expression as the one above!
 
