@@ -1,6 +1,6 @@
 //Event on ready DOM
 function loadData() {
-    return fetch("http://amoghpj.github.io/assets/dat/adiparvan.json")
+    return fetch("//amoghpj.github.io/assets/dat/adiparvan.json")
     .then(res => res.json());
 }
 
