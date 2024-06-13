@@ -16,7 +16,7 @@ loadData().then(data => {
             var results_iast = [];
             var results_dev = [];
             for (var i=0 ; i < data.length ; i++){
-                if (data[i].iast.join(",").normalize('NFD').includes(value)) {
+                if (data[i].iast.join(",").normalize("NFKD").replace(/[^\w]/g, '').includes(value)) {
                     results_iast.push([data[i].chapter, 
                                        data[i].sloka_id, 
                                        data[i].iast.toString()]);
