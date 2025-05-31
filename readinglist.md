@@ -9,17 +9,26 @@ Last updated on `30 May 2025`
 - Veer Savarkar - A contested legacy - Vikram Sampath
 - The materiality of the past - History and representation in Sikh tradition - Anne Murphy
 - The new scientific spirit - Gaston Bachelard
+- Harvard - Kahn
+- The Rise and Fall of T.D. Lysenko
 
 # Currently reading
 
 - The WEIRDest People in the world - Joseph Henrich
 - The Doctrine of Vibration - Mark Dyczkowski
+- The End of History and the Last Man - Francis Fukuyama
+- What I talk about running when I talk about running - Haruki Murakami
 - Trans: When Ideology meets Reality - Helen Joyce
 - Orientalism - Edward Said
 
 # Books
 
 **Non fiction**
+- 2025
+  - [The Worldly Philosphers - The Lives, Times And Ideas Of The Great Economic Thinkers](https://www.amazon.com/Worldly-Philosophers-Economic-Thinkers-Seventh/dp/068486214X) - *Robert Heilbroner*
+  
+- 2024
+  - [Reading the fifth Veda](https://brill.com/display/title/18099?language=en&srsltid=AfmBOopiIyPQczj1W1jAfL_C2lVNq1W_5vG_jFE4ghjOd3O7OEFMEu_c) - *Alf Hiltebeitel*
 
 - 2023
   - [The Sphota Theory of Language](https://www.amazon.com/gp/product/8120801814/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - *Harold G. Coward*
