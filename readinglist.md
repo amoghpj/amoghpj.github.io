@@ -4,7 +4,9 @@ title: Reading list
 ---
 Last updated on `30 May 2025`
 
-# On my shelf (things that I want to start reading soon!)
+# On my shelf 
+
+(Things that I want to start reading soon!)
 
 - Veer Savarkar - A contested legacy - Vikram Sampath
 - The materiality of the past - History and representation in Sikh tradition - Anne Murphy
