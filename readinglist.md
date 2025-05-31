@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `26 December 2023`
+Last updated on `30 May 2025`
 
 # On my shelf (things that I want to start reading soon!)
 
