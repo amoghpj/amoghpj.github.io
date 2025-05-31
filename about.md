@@ -6,7 +6,7 @@ title: About
 
 ![Profile Image](/assets/images/me.jpeg)
 
-Hi! I am Amogh Jalihal and I am a research scientisti at [Harvard Medical School](https://hms.harvard.edu/), 
+Hi! I am Amogh Jalihal and I am a research scientist at [Harvard Medical School](https://hms.harvard.edu/), 
 working with [Prof. Michael Springer's](https://springerlab.org/) group. I was previously a postdoc also with Mike Springer. I have a PhD from the [Genetics, Bioinformatics, and
 Computational Biology Program](https://gbcb.graduateschool.vt.edu/) at [Virginia
 Tech](http://www.vt.edu/). My graduate research involved
@@ -43,7 +43,7 @@ where I was introduced to nematode biology and image analysis.
 
 This webpage is my attempt at documenting some of my computational
 adventures systematically. Apart from ~~microscopy~~, scripting and
-mathematical modeling, I also like listening to and making music.
+mathematical modeling, I also like listening to ~~and making~~ music and reading Sanskrit literature.
 
 
-नमस्कार! मेरा नाम है अमोघ जालीहाळ| २०२० से मै [Harvard Medical School](https://hms.harvard.edu/) मे [Prof. Michael Springer](https://springerlab.org/) के प्रयोगशाला मे शोधकर्ता के पद मे काम कर रहा हू|
+नमस्कार! मेरा नाम है अमोघ जालीहाळ. २०२० से मै [Harvard Medical School](https://hms.harvard.edu/) मे [Prof. Michael Springer](https://springerlab.org/) के प्रयोगशाला मे शोधकर्ता के पद मे काम कर रहा हू.
