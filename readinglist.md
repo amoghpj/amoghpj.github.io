@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `30 May 2025`
+Last updated on `7th October 2025`
 
 # On my shelf 
 
@@ -17,8 +17,6 @@ Last updated on `30 May 2025`
 # Currently reading
 
 - The WEIRDest People in the world - Joseph Henrich
-- The Doctrine of Vibration - Mark Dyczkowski
-- The End of History and the Last Man - Francis Fukuyama
 - What I talk about running when I talk about running - Haruki Murakami
 - Trans: When Ideology meets Reality - Helen Joyce
 - Orientalism - Edward Said
@@ -28,6 +26,10 @@ Last updated on `30 May 2025`
 **Non fiction**
 - 2025
   - [The Worldly Philosphers - The Lives, Times And Ideas Of The Great Economic Thinkers](https://www.amazon.com/Worldly-Philosophers-Economic-Thinkers-Seventh/dp/068486214X) - *Robert Heilbroner*
+  - [The End of History and the Last Man](https://www.amazon.com/End-History-Last-Man/dp/0743284550) - *Francis Fukuyama*
+  - [There is not Antimimetics Division](https://www.amazon.com/There-No-Antimemetics-Division-Novel/dp/0593983750) - *qntm*
+  - The Doctrine of Vibration - *Mark Dyczkowski*
+  - [Proto - How one ancient language went global](https://www.amazon.com/Proto-Ancient-Language-Went-Global/dp/1639732586) - *Laura Spinney*
   
 - 2024
   - [Reading the fifth Veda](https://brill.com/display/title/18099?language=en&srsltid=AfmBOopiIyPQczj1W1jAfL_C2lVNq1W_5vG_jFE4ghjOd3O7OEFMEu_c) - *Alf Hiltebeitel*
