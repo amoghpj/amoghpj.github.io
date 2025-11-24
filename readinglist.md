@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `7th October 2025`
+Last updated on `23rd November 2025`
 
 # On my shelf 
 
@@ -25,6 +25,7 @@ Last updated on `7th October 2025`
 
 **Non fiction**
 - 2025
+  - [The Ocean of Churn] - *Sanjeev Sanyal*
   - [The Worldly Philosphers - The Lives, Times And Ideas Of The Great Economic Thinkers](https://www.amazon.com/Worldly-Philosophers-Economic-Thinkers-Seventh/dp/068486214X) - *Robert Heilbroner*
   - [The End of History and the Last Man](https://www.amazon.com/End-History-Last-Man/dp/0743284550) - *Francis Fukuyama*
   - [There is not Antimimetics Division](https://www.amazon.com/There-No-Antimemetics-Division-Novel/dp/0593983750) - *qntm*
