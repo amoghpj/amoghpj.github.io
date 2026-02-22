@@ -2,7 +2,7 @@
 layout: default
 title: Reading list
 ---
-Last updated on `23rd November 2025`
+Last updated on `21st February 2026`
 
 # On my shelf 
 
@@ -24,8 +24,11 @@ Last updated on `23rd November 2025`
 # Books
 
 **Non fiction**
+- 2026
+  - [The political philosophy of Zhang Taiyan](https://brill.com/display/title/20038?language=en&srsltid=AfmBOoppB9q15vEihjgN186Zt9BUv6Bi7UX5CCh-64y_rWIkPNQ1IaZy) - *Viren Murthy*
+
 - 2025
-  - [The Ocean of Churn] - *Sanjeev Sanyal*
+  - [The Ocean of Churn](https://www.amazon.com/Ocean-Churn-Indian-Shaped-History/dp/0670087327) - *Sanjeev Sanyal*
   - [The Worldly Philosphers - The Lives, Times And Ideas Of The Great Economic Thinkers](https://www.amazon.com/Worldly-Philosophers-Economic-Thinkers-Seventh/dp/068486214X) - *Robert Heilbroner*
   - [The End of History and the Last Man](https://www.amazon.com/End-History-Last-Man/dp/0743284550) - *Francis Fukuyama*
   - [There is not Antimimetics Division](https://www.amazon.com/There-No-Antimemetics-Division-Novel/dp/0593983750) - *qntm*
