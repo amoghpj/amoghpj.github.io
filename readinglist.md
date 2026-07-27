@@ -2,30 +2,33 @@
 layout: default
 title: Reading list
 ---
-Last updated on `21st February 2026`
+Last updated on `27th July 2026`
+
+# Currently reading
+- Philology and Criticism - Vishwa Adluri and Joydeep Bagchee
+- Crisis of the European Mind - Paul Hazard
 
 # On my shelf 
 
-(Things that I want to start reading soon!)
+(Things that I want to ~start~ finish reading soon!)
 
 - Veer Savarkar - A contested legacy - Vikram Sampath
 - The materiality of the past - History and representation in Sikh tradition - Anne Murphy
 - The new scientific spirit - Gaston Bachelard
 - Harvard - Kahn
 - The Rise and Fall of T.D. Lysenko
-
-# Currently reading
-
 - The WEIRDest People in the world - Joseph Henrich
 - What I talk about running when I talk about running - Haruki Murakami
 - Trans: When Ideology meets Reality - Helen Joyce
 - Orientalism - Edward Said
+
 
 # Books
 
 **Non fiction**
 - 2026
   - [The political philosophy of Zhang Taiyan](https://brill.com/display/title/20038?language=en&srsltid=AfmBOoppB9q15vEihjgN186Zt9BUv6Bi7UX5CCh-64y_rWIkPNQ1IaZy) - *Viren Murthy*
+  - [Religious Conversion - Indian Disputes and Their European Origins](https://www.taylorfrancis.com/books/mono/10.4324/9781003281269/religious-conversion-sarah-claerhout-jakob-de-roover) - *Jakob de Roover and Sarah Claerhout*
 
 - 2025
   - [The Ocean of Churn](https://www.amazon.com/Ocean-Churn-Indian-Shaped-History/dp/0670087327) - *Sanjeev Sanyal*
