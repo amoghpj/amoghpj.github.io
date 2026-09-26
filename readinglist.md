@@ -2,10 +2,10 @@
 layout: default
 title: Reading list
 ---
-Last updated on `27th July 2026`
+Last updated on `4th September 2026`
 
 # Currently reading
-- Philology and Criticism - Vishwa Adluri and Joydeep Bagchee
+- 
 - Crisis of the European Mind - Paul Hazard
 
 # On my shelf 
@@ -27,6 +27,7 @@ Last updated on `27th July 2026`
 
 **Non fiction**
 - 2026
+  - [Philology and Criticism: A Guide to Mahbhrata Textual Criticism](https://zenodo.org/records/6409337) - Vishwa Adluri and Joydeep Bagchee
   - [The political philosophy of Zhang Taiyan](https://brill.com/display/title/20038?language=en&srsltid=AfmBOoppB9q15vEihjgN186Zt9BUv6Bi7UX5CCh-64y_rWIkPNQ1IaZy) - *Viren Murthy*
   - [Religious Conversion - Indian Disputes and Their European Origins](https://www.taylorfrancis.com/books/mono/10.4324/9781003281269/religious-conversion-sarah-claerhout-jakob-de-roover) - *Jakob de Roover and Sarah Claerhout*
 
