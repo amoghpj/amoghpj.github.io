@@ -1,5 +1,5 @@
 ---
-title: "Technical Post 1: How we aligned the Gita Press translation to the Critical Edition of the Mahabharata"
+title: "Technical Post 1: Aligning sanskrit text"
 layout: post
 headerImage: false
 description: Towards building the Ephemeral Forest
@@ -27,11 +27,13 @@ The text of Critical Edition is organized nicely into chapters, whereas the Gita
 We started of with a simple string comparison
 
 > CE: नारायणं नमस्कृत्य नरं चैव नरोत्तमम्
+
 > GP: नारायणं नमस्कृत्य नरं चैव नरोत्तमम्
 
 The sequence similarity score for this pair is 100%.  This works great, until we get to 
 
 > CE: यदैव पितरं वृत्तमुत्तङ्कादशृणोत्तदा
+
 > GP: यदैव वृत्तं पितरमुत्तङ्कादशृणोत् तदा
 
 The sequence similarity score is only 82%, even though we know these two are *semantically* identical sanskrit sentences. And there is no correct way to pick a sequence similarity cutoff without risking losing real matches.
@@ -58,6 +60,7 @@ We used LLMs to propose an implementation using the ideas above, and adapting th
 Adapting the basic tooling to sanskrit text, we make some assumptions on how to score two Sanskrit lines:
 1. We are aligning devanagari text. Each character is a consonant-vowel combination, or conjunct consonants. This, the akshara, becomes the unit of comparison, not the underlying atomic raw Unicode code itself.
 2. Scoring is as follows. We don't penalize a mismatch in the trailing nasal variant, or an anusvara.
+
    | Score            | Condition                                         | Example |
    |------------------|---------------------------------------------------|---------|
    | +2 (`MATCH`)     | identical akshara                                 | त्त = त्त |
@@ -68,19 +71,24 @@ Adapting the basic tooling to sanskrit text, we make some assumptions on how to 
 3. We track the longest stretch of positive scoring aksharas. These stretches are called "anchors"
    ```
    count[i][j] = count[i-1][j-1] + 1,  if score(a[i], b[j]) >= 0
+   
    wsum[i][j]  = wsum[i-1][j-1] + score(a[i], b[j])
+   
    (both reset to 0 otherwise)
    ```
 4. Chaining anchors together: If anchors appear in the same order in the two queries, there is no penaly. We penalize transposed anchors, and overlapping anchors are disqualified. The final scoring is 
 
    ```
-   score = sum(anchor weights) - 2 * (unaligned aksharas, either side) - 3 * (number of reorder events)
+   score = sum(anchor weights) - 2 * (unaligned aksharas, either side)
+   
+   - 3 * (number of reorder events)
    ```
 # Aligning to the Critical Edition and outlook
 
 When we apply our `chain-anchor` method to score this pair
 
 > CE: यदैव पितरं वृत्तमुत्तङ्कादशृणोत्तदा
+
 > GP: यदैव वृत्तं पितरमुत्तङ्कादशृणोत् तदा
 
 ![](/assets/images/chain_anchor_example.png)
@@ -97,10 +105,15 @@ By looping over the Critical Edition chapters, we at least have delimiters for w
 2. Split the document into individual pages using pdftk, and converted the PDF pages to PNG. Attempted to parse the text directly from the PDF, but this failed bacause of the text encoding.
 3. Used Sarvam's vision model to OCR from the images which worked very well. ([script](https://github.com/amoghpj/mahabharata-experiments/blob/main/adiparvan_ganguli_reader/src/extract_gitapress_text.py))
 4. Collate the OCR text together in a single file. At this point the sanskrit and hindi text were interleaved.
+
    > ॐ नमो भगवते वासुदेवाय। ॐ नमः पितामहाय। ॐ नमः प्रजापतिभ्यः। ॐ
+   
    > नमः कृष्णद्वैपायनाय। ॐ नमः सर्वविघ्नविनायकेभ्यः।
+   
    > ॐकारस्वरूप भगवान् वासुदेवको नमस्कार है। ॐकारस्वरूप भगवान् पितामहको
+   
    > नमस्कार है। ॐकारस्वरूप प्रजापतियोंको नमस्कार है। ॐकारस्वरूप श्रीकृष्णद्वैपायनको
+   
    > नमस्कार है। ॐकारस्वरूप सर्व-विघ्नविनाशक विनायकोंको नमस्कार है। 
 
 5. First attempt and parsing failed - attempted to use ftlangdetect to classify each line as sanskrit or hindi. This has about a 90% accuracy, but some with enough mistakes that I decided to abandon this.
