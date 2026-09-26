@@ -70,18 +70,20 @@ Adapting the basic tooling to Sanskrit text, we make some assumptions on how to 
    | −2 (`GAP`)       | no corresponding akshara at all                   | —       |
 3. We track the longest stretch of positive scoring aksharas. These stretches are called "anchors"
    ```
-   count[i][j] = count[i-1][j-1] + 1,  if score(a[i], b[j]) >= 0
+count[i][j] = count[i-1][j-1] + 1,  if score(a[i], b[j]) >= 0
    
-   wsum[i][j]  = wsum[i-1][j-1] + score(a[i], b[j])
+wsum[i][j]  = wsum[i-1][j-1] + score(a[i], b[j])
    
-   (both reset to 0 otherwise)
+(both reset to 0 otherwise)
    ```
 4. Chaining anchors together: If anchors appear in the same order in the two queries, there is no penaly. We penalize transposed anchors, and overlapping anchors are disqualified. The final scoring is 
 
    ```
-   score = sum(anchor weights) - 2 * (unaligned aksharas, either side)
+score = sum(anchor weights) 
+
+- 2 * (unaligned aksharas, either side)
    
-   - 3 * (number of reorder events)
+- 3 * (number of reorder events)
    ```
 # Aligning to the Critical Edition and outlook
 

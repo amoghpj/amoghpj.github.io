@@ -31,6 +31,7 @@ $--riso-noise-img: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAM
     }
     .highlight{
         position: relative;
+        background-color: #eeeeee;
     }
     left: $main-left;
     z-index: 1; /* Stay on top */
@@ -147,7 +148,7 @@ $--riso-noise-img: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAM
         font-famility: Monospace;
         font-size: 16px;
         color: #a83232;
-        background-color: #ffffff;
+        background-color: #eeeeee;
         margin-left: 2%;
         width: 60%;
     }       
